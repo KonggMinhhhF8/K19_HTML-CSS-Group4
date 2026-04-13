@@ -193,7 +193,7 @@
             $0<span class="text-sm xl:text-base 2xl:text-xl font-medium text-[#4C4C4D]">/month</span>
           </h2>
 					<div class="p-5 xl:p-10 bg-white border border-[#F1F1F3] rounded-tl-[14px] rounded-tr-[14px]">
-            <h4 class="text-center text-lg 2xl:text-xl font-medium leading-[1.5] mb-5 xl:mb-7.5">Available feature</h4>
+            <h3 class="text-center text-lg 2xl:text-xl font-medium leading-[1.5] mb-5 xl:mb-7.5">Available feature</h3>
             <ul class="xl:px-7.5 flex flex-col gap-5 xl:text-sm 2xl:text-lg">
               <li class="flex h-15 border border-[#F1F1F3] p-3 2xl:p-3.5 rounded-lg">
                   <span class="flex justify-center items-center shrink-0 w-6 h-6 2xl:w-8 2xl:h-8 bg-[#FFF4E5] rounded-md mr-2 xl:mr-3">
@@ -250,7 +250,7 @@
             $79<span class="text-sm xl:text-base 2xl:text-xl font-medium text-[#4C4C4D]">/month</span>
           </h2>
 					<div class="p-5 xl:p-10 bg-white border border-[#F1F1F3] rounded-tl-[14px] rounded-tr-[14px]">
-            <h4 class="text-center text-lg 2xl:text-xl font-medium leading-[1.5] mb-5 xl:mb-7.5">Available feature</h4>
+            <h3 class="text-center text-lg 2xl:text-xl font-medium leading-[1.5] mb-5 xl:mb-7.5">Available feature</h3>
             <ul class="xl:px-7.5 flex flex-col gap-5 xl:text-sm 2xl:text-lg  ">
               <li class="flex h-15 border border-[#F1F1F3] p-3 2xl:p-3.5 rounded-lg">
                   <span class="flex justify-center items-center shrink-0 w-6 h-6 2xl:w-8 2xl:h-8 bg-[#FFF4E5] rounded-md mr-2 xl:mr-3">
@@ -335,36 +335,45 @@
           <!-- Input checkbox toggle 1-->
           <input type="checkbox" id="faq1" class="peer hidden" checked>
           <!-- Item 1 -->
-          <div class="flex flex-col w-full self-start gap-5 xl:gap-10 2xl:gap-12.5 border border-[#F1F1F3] rounded-[10px] 
-          2xl:rounded-xl
-          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5
-          peer-checked:[&_.content]:block
-          peer-checked:[&_.other]:flex
+          <div class="flex flex-col w-full self-start border border-[#F1F1F3] rounded-[10px] 
+          2xl:rounded-xl 
+          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5 peer-checked:xl:py-10 peer-checked:py-6
           peer-checked:[&_.icon]:rotate-45
+          peer-checked:[&_.answer]:max-h-[500px]
+          peer-checked:[&_.answer]:opacity-100
+          transition-[padding]
+          duration-500 ease-in-out
           ">
             
   
             <!-- Header -->
-            <div class="flex justify-between items-center peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
+            <div class="flex justify-between items-center gap-7.5 xl:gap-10 2xl:gap-12.5 peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
               <h3 class="text-base font-medium leading-[1.5]
                           xl:text-lg 
                           2xl:text-xl
-  
+                          
               
               ">Can I enroll in multiple courses at once?</h3>
               <label for="faq1" class="p-2.5 xl:p-3 bg-[#FFF4E5] rounded-lg w-10 h-10 xl:w-11 xl:h-11 2xl:w-13 2xl:h-13 flex justify-center shrink-0 items-center cursor-pointer">
                 <img class="icon w-3 h-3 2xl:w-4.25 2xl:h-4.25 transition-transform duration-300 select-none" src="./assets/svg/accordion.svg" alt="Close Button Icon">
               </label>  
             </div>
-            <!-- Content -->
-            <p class="content text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] hidden select-none
-  
-            ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-            <!-- Other -->
-            <div class="other flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg hidden">
-              <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
-              <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
-                <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+
+            <!-- thẻ div(có class answer ) là wrapper của content và other: animation slider -->
+            <div class="answer overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out
+              peer-checked:mt-5 xl:peer-checked:mt-10 2xl:peer-checked:mt-12.5
+              peer-checked:max-h-[500px]
+            ">
+              <!-- Content -->
+              <p class="text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] select-none
+              my-5 xl:my-10 2xl:my-12.5
+              ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+              <!-- Other -->
+              <div class="flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg">
+                <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
+                <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
+                  <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -374,114 +383,141 @@
           <!-- Input checkbox toggle 2-->
           <input type="checkbox" id="faq2" class="peer hidden">
           <!-- Item 2 -->
-          <div class="flex flex-col w-full self-start gap-5 xl:gap-10 2xl:gap-12.5 border border-[#F1F1F3] rounded-[10px] 
-          2xl:rounded-xl
-          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5
-          peer-checked:[&_.content]:block
-          peer-checked:[&_.other]:flex
+          <div class="flex flex-col w-full self-start border border-[#F1F1F3] rounded-[10px] 
+          2xl:rounded-xl 
+          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5 peer-checked:xl:py-10 peer-checked:py-6
           peer-checked:[&_.icon]:rotate-45
+          peer-checked:[&_.answer]:max-h-[500px]
+          peer-checked:[&_.answer]:opacity-100
+          transition-[padding]
+          duration-500 ease-in-out
           ">
             
   
             <!-- Header -->
-            <div class="flex justify-between items-center peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
+            <div class="flex justify-between items-center gap-7.5 xl:gap-10 2xl:gap-12.5 peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
               <h3 class="text-base font-medium leading-[1.5]
                           xl:text-lg 
                           2xl:text-xl
-  
+                          
               
               ">What kind of support can I expect from instructors?</h3>
               <label for="faq2" class="p-2.5 xl:p-3 bg-[#FFF4E5] rounded-lg w-10 h-10 xl:w-11 xl:h-11 2xl:w-13 2xl:h-13 flex justify-center shrink-0 items-center cursor-pointer">
                 <img class="icon w-3 h-3 2xl:w-4.25 2xl:h-4.25 transition-transform duration-300 select-none" src="./assets/svg/accordion.svg" alt="Close Button Icon">
               </label>  
             </div>
-            <!-- Content -->
-            <p class="content text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] hidden select-none
-  
-            ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-            <!-- Other -->
-            <div class="other flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg hidden">
-              <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
-              <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
-                <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+
+            <!-- thẻ div(có class answer ) là wrapper của content và other: animation slider -->
+            <div class="answer overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out
+              peer-checked:mt-5 xl:peer-checked:mt-10 2xl:peer-checked:mt-12.5
+              peer-checked:max-h-[500px]
+            ">
+              <!-- Content -->
+              <p class="text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] select-none
+              my-5 xl:my-10 2xl:my-12.5
+              ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+              <!-- Other -->
+              <div class="flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg">
+                <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
+                <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
+                  <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+              </div>
             </div>
           </div>
         </div>
-
+        
         <!-- FAQ ITEM 3 -->
         <div class="w-full">
           <!-- Input checkbox toggle 3-->
           <input type="checkbox" id="faq3" class="peer hidden">
           <!-- Item 3 -->
-          <div class="flex flex-col w-full self-start gap-5 xl:gap-10 2xl:gap-12.5 border border-[#F1F1F3] rounded-[10px] 
-          2xl:rounded-xl
-          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5
-          peer-checked:[&_.content]:block
-          peer-checked:[&_.other]:flex
+          <div class="flex flex-col w-full self-start border border-[#F1F1F3] rounded-[10px] 
+          2xl:rounded-xl 
+          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5 peer-checked:xl:py-10 peer-checked:py-6
           peer-checked:[&_.icon]:rotate-45
+          peer-checked:[&_.answer]:max-h-[500px]
+          peer-checked:[&_.answer]:opacity-100
+          transition-[padding]
+          duration-500 ease-in-out
           ">
             
   
             <!-- Header -->
-            <div class="flex justify-between items-center peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
+            <div class="flex justify-between items-center gap-7.5 xl:gap-10 2xl:gap-12.5 peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
               <h3 class="text-base font-medium leading-[1.5]
                           xl:text-lg 
                           2xl:text-xl
-  
+                          
               
               ">Are the courses self-paced or do they have specific start and end dates?</h3>
               <label for="faq3" class="p-2.5 xl:p-3 bg-[#FFF4E5] rounded-lg w-10 h-10 xl:w-11 xl:h-11 2xl:w-13 2xl:h-13 flex justify-center shrink-0 items-center cursor-pointer">
                 <img class="icon w-3 h-3 2xl:w-4.25 2xl:h-4.25 transition-transform duration-300 select-none" src="./assets/svg/accordion.svg" alt="Close Button Icon">
               </label>  
             </div>
-            <!-- Content -->
-            <p class="content text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] hidden select-none
-  
-            ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-            <!-- Other -->
-            <div class="other flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg hidden">
-              <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
-              <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
-                <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+
+            <!-- thẻ div(có class answer ) là wrapper của content và other: animation slider -->
+            <div class="answer overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out
+              peer-checked:mt-5 xl:peer-checked:mt-10 2xl:peer-checked:mt-12.5
+              peer-checked:max-h-[500px]
+            ">
+              <!-- Content -->
+              <p class="text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] select-none
+              my-5 xl:my-10 2xl:my-12.5
+              ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+              <!-- Other -->
+              <div class="flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg">
+                <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
+                <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
+                  <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+              </div>
             </div>
           </div>
         </div>
-
+          
         <!-- FAQ ITEM 4 -->
         <div class="w-full">
           <!-- Input checkbox toggle 4-->
           <input type="checkbox" id="faq4" class="peer hidden">
           <!-- Item 4 -->
-          <div class="flex flex-col w-full self-start gap-5 xl:gap-10 2xl:gap-12.5 border border-[#F1F1F3] rounded-[10px] 
-          2xl:rounded-xl
-          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5
-          peer-checked:[&_.content]:block
-          peer-checked:[&_.other]:flex
+          <div class="flex flex-col w-full self-start border border-[#F1F1F3] rounded-[10px] 
+          2xl:rounded-xl 
+          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5 peer-checked:xl:py-10 peer-checked:py-6
           peer-checked:[&_.icon]:rotate-45
+          peer-checked:[&_.answer]:max-h-[500px]
+          peer-checked:[&_.answer]:opacity-100
+          transition-[padding]
+          duration-500 ease-in-out
           ">
             
   
             <!-- Header -->
-            <div class="flex justify-between items-center peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
+            <div class="flex justify-between items-center gap-7.5 xl:gap-10 2xl:gap-12.5 peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
               <h3 class="text-base font-medium leading-[1.5]
                           xl:text-lg 
                           2xl:text-xl
-  
+                          
               
               ">Are there any prerequisites for the courses?</h3>
               <label for="faq4" class="p-2.5 xl:p-3 bg-[#FFF4E5] rounded-lg w-10 h-10 xl:w-11 xl:h-11 2xl:w-13 2xl:h-13 flex justify-center shrink-0 items-center cursor-pointer">
                 <img class="icon w-3 h-3 2xl:w-4.25 2xl:h-4.25 transition-transform duration-300 select-none" src="./assets/svg/accordion.svg" alt="Close Button Icon">
               </label>  
             </div>
-            <!-- Content -->
-            <p class="content text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] hidden select-none
-  
-            ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-            <!-- Other -->
-            <div class="other flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg hidden">
-              <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
-              <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
-                <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+
+            <!-- thẻ div(có class answer ) là wrapper của content và other: animation slider -->
+            <div class="answer overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out
+              peer-checked:mt-5 xl:peer-checked:mt-10 2xl:peer-checked:mt-12.5
+              peer-checked:max-h-[500px]
+            ">
+              <!-- Content -->
+              <p class="text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] select-none
+              my-5 xl:my-10 2xl:my-12.5
+              ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+              <!-- Other -->
+              <div class="flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg">
+                <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
+                <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
+                  <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -491,66 +527,49 @@
           <!-- Input checkbox toggle 5-->
           <input type="checkbox" id="faq5" class="peer hidden">
           <!-- Item 5 -->
-          <div class="flex flex-col w-full self-start gap-5 xl:gap-10 2xl:gap-12.5 border border-[#F1F1F3] rounded-[10px] 
-          2xl:rounded-xl
-          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5
-          peer-checked:[&_.content]:block
-          peer-checked:[&_.other]:flex
+          <div class="flex flex-col w-full self-start border border-[#F1F1F3] rounded-[10px] 
+          2xl:rounded-xl 
+          2xl:py-7.5 2xl:px-12.5 xl:py-6 xl:px-10 px-6 py-5 peer-checked:2xl:py-12.5 peer-checked:xl:py-10 peer-checked:py-6
           peer-checked:[&_.icon]:rotate-45
+          peer-checked:[&_.answer]:max-h-[500px]
+          peer-checked:[&_.answer]:opacity-100
+          transition-[padding]
+          duration-500 ease-in-out
           ">
             
   
             <!-- Header -->
-            <div class="flex justify-between items-center peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
+            <div class="flex justify-between items-center gap-7.5 xl:gap-10 2xl:gap-12.5 peer-checked:pb-5 peer-checked:2xl:pb-6 peer-checked:border-b peer-checked:border-[#F1F1F3]">
               <h3 class="text-base font-medium leading-[1.5]
                           xl:text-lg 
                           2xl:text-xl
-  
+                          
               
               ">Can I download the course materials for offline access?</h3>
               <label for="faq5" class="p-2.5 xl:p-3 bg-[#FFF4E5] rounded-lg w-10 h-10 xl:w-11 xl:h-11 2xl:w-13 2xl:h-13 flex justify-center shrink-0 items-center cursor-pointer">
                 <img class="icon w-3 h-3 2xl:w-4.25 2xl:h-4.25 transition-transform duration-300 select-none" src="./assets/svg/accordion.svg" alt="Close Button Icon">
               </label>  
             </div>
-            <!-- Content -->
-            <p class="content text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] hidden select-none
-  
-            ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-            <!-- Other -->
-            <div class="other flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg hidden">
-              <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
-              <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
-                <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+
+            <!-- thẻ div(có class answer ) là wrapper của content và other: animation slider -->
+            <div class="answer overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out
+              peer-checked:mt-5 xl:peer-checked:mt-10 2xl:peer-checked:mt-12.5
+              peer-checked:max-h-[500px]
+            ">
+              <!-- Content -->
+              <p class="text-sm xl:text-base 2xl:text-lg text-[#4C4C4D] select-none
+              my-5 xl:my-10 2xl:my-12.5
+              ">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+              <!-- Other -->
+              <div class="flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg">
+                <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
+                <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
+                  <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
+              </div>
             </div>
           </div>
         </div>
-          
         
-        <!-- Item demo -->
-        <!-- <div class="flex flex-col gap-5 xl:gap-10 2xl:gap-12.5 border border-[#F1F1F3] rounded-[10px] 
-        2xl:rounded-xl
-        2xl:p-12.5 xl:p-10 p-6
-        ">
-          <div class="flex justify-between items-center ">
-            <h3 class="text-base font-medium leading-[1.5]
-                        xl:text-lg 
-                        2xl:text-xl
-
-            
-            ">Can I enroll in multiple courses at once?</h3>
-            <span class="p-2.5 xl:p-3 bg-[#FFF4E5] rounded-lg w-10 h-10 xl:w-11 xl:h-11 2xl:w-13 2xl:h-13 flex justify-center shrink-0 items-center
-
-            
-            "><img class="w-3 h-3 2xl:w-4.25 2xl:h-4.25 rotate-45
-            " src="./assets/svg/accordion.svg" alt="Close Button Icon"></span>
-          </div>
-          <p class="text-sm xl:text-base 2xl:text-lg text-[#4C4C4D]">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-          <div class="flex justify-between items-center bg-[#F7F7F8] p-3.25 xl:py-4 xl:px-3.5 2xl:p-5 rounded-md 2xl:rounded-lg ">
-            <span class="text-sm font-medium xl:text-base 2xl:text-lg text-[#333333] select-none">Enrollment Process for Different Courses</span>
-            <a href="#" class="flex justify-center shrink-0 bg-white rounded-full items-center w-10 h-10 xl:w-12 xl:w-12 2xl:w-14 2xl:h-14">
-              <img class="w-4 h-4 brightness-0 opacity-60" src="./assets/svg/arrow-right.svg" alt="Go to other page"></a>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -594,7 +613,7 @@
         >
           <!-- col -->
           <div class="xl:min-w-[249px] xl:pr-0 pr-7.5 text-[#59595A]">
-            <h4 class="mb-2.5 2xl:mb-3.5 font-semibold text-xl">Home</h4>
+            <h3 class="mb-2.5 2xl:mb-3.5 font-semibold text-xl">Home</h3>
             <ul class="flex flex-col gap-2">
               <li>
                 <a
@@ -628,7 +647,7 @@
           </div>
           <!-- col -->
           <div class="xl:min-w-[249px] text-[#59595A]">
-            <h4 class="mb-2.5 2xl:mb-3.5 font-semibold text-xl">About Us</h4>
+            <h3 class="mb-2.5 2xl:mb-3.5 font-semibold text-xl">About Us</h3>
             <ul class="flex flex-col gap-2">
               <li>
                 <a
@@ -655,9 +674,9 @@
           </div>
           <!-- col -->
           <div class="xl:min-w-[249px]">
-            <h4 class="mb-2.5 2xl:mb-3.5 font-semibold text-xl">
+            <h3 class="mb-2.5 2xl:mb-3.5 font-semibold text-xl">
               Social Profiles
-            </h4>
+            </h3>
             <div class="flex gap-3.5">
               <a
                 title="social media"
