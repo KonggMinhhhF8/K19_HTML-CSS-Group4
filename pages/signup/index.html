@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LOGIN</title>
+    <title>SIGN UP</title>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
           rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -96,14 +96,20 @@
         <div class="order-1 md:order-2 bg-white rounded-[10px] py-[30px] px-[40px] border border-[#F1F1F3] md:p-[40px]
         2xl:p-[50px]">
             <div class="text-center leading-none">
-                <h2 class="text-[28px] font-semibold text-[#262626] mb-[8px] md:text-[38px] 2xl:text-[48px] 2xl:mb-[12px]">Login</h2>
-                <p class="text-[14px] font-normal text-[#4C4C4D] md:text-[16px] 2xl:text-[18px]">Welcome back! Please log in to access
-                    your account.</p>
+                <h2 class="text-[28px] font-semibold text-[#262626] mb-[8px] md:text-[38px] 2xl:text-[48px] 2xl:mb-[12px]">Sign Up</h2>
+                <p class="text-[14px] font-normal text-[#4C4C4D] md:text-[16px] 2xl:text-[18px]">Create an account to unlock exclusive features.</p>
             </div>
             <!--    Form    -->
             <form class="text-[14px] leading-[1.5] md:text-[16px] 2xl:text-[18px]">
                 <div class="flex flex-col gap-[10px] pb-[20px] pt-[30px] md:pt-[40px]
                             2xl:pt-[50px] 2xl:pb-[24px] 2xl:gap-[14px]">
+                    <label for="name" class="font-medium text-[#262626]">Full Name</label>
+                    <input type="text" class="bg-[#F7F7F8] border border-[#F1F1F3] p-[20px] rounded-[8px]
+                    placeholder:text-[14px] outline-none md:placeholder:text-[16px]
+                    2xl:p-[24px] 2xl:rounded-[10px] 2xl:placeholder:text-[18px]" id="name" placeholder=
+                            "Enter your Name">
+                </div>
+                <div class="flex flex-col gap-[10px] pb-[20px] 2xl:pb-[24px] 2xl:gap-[14px]">
                     <label for="email" class="font-medium text-[#262626]">Email</label>
                     <input type="email" class="bg-[#F7F7F8] border border-[#F1F1F3] p-[20px] rounded-[8px]
                     placeholder:text-[14px] outline-none md:placeholder:text-[16px]
@@ -122,18 +128,17 @@
                         w-[20px] h-[20px] cursor-pointer md:w-[24px] h-[24px]">
                     </div>
                 </div>
-                <div class="flex justify-end mt-[10px] 2xl:mt-[14px]">
-                    <a href="#" class="font-normal text-[#4C4C4D]">Forgot Password?</a>
-                </div>
                 <div class="flex items-center gap-[8px] py-[21.5px] md:py-[20px] 2xl:gap-[10px] 2xl:py-[25.5px]">
                     <input type="checkbox" class="bg-[#F7F7F8] w-[24px] h-[24px] border border-[#F1F1F3] rounded-[4px]
                                                 2xl:w-[30px] h-[30px]" id="remember">
-                    <label for="remember" class="font-normal text-[#656567]">Remember Me</label>
+                    <label for="remember" class="font-normal text-[#656567]">I agree with <a
+                            href="#" class="font-medium underline cursor-pointer">Terms of Use</a> and <a
+                            href="#" class="font-medium underline cursor-pointer">Privacy Policy</a></label>
                 </div>
                 <div class="md:text-[14px] 2xl:text-[18px]">
                     <button class="w-full bg-[#FF9500] text-white px-[20px] py-[14px] font-medium rounded-[6px]
                     transition-all duration-300 hover:bg-[#E68600] hover:shadow-md
-                    cursor-pointer 2xl:px-[20px] 2xl:py-[18px] 2xl:rounded-[10px]">Login</button>
+                    cursor-pointer 2xl:px-[20px] 2xl:py-[18px] 2xl:rounded-[10px]">Sign Up</button>
                     <div class="flex items-center gap-[12px] py-[24px] 2xl:py-[30px]">
                         <div class="flex-1 h-[1px] bg-[#E4E4E7]"></div>
                         <span class="font-normal text-[#98989A]">OR</span>
@@ -142,14 +147,14 @@
                     <button class="flex items-center justify-center gap-[14px] bg-[#F7F7F8] w-full py-[17.5px] border
                     border-[#F1F1F3] font-medium rounded-[6px] cursor-pointer md:rounded-[8px] 2xl: py-[21.5px] 2xl:rounded-[10px]">
                         <img src="../../assets/icons/ic-google.svg" class="w-[24px] h-[24px] 2xl:w-[30px] h-[30px]">
-                        Login with Google
+                        Sign Up with Google
                     </button>
                 </div>
             </form>
-            <!--    Link Sign Up        -->
+            <!--    Link Login        -->
             <div class="leading-[1.5] mt-[24px] 2xl:mt-[30px]">
                 <p class="text-center text-[14px] font-normal md:text-[16px] 2xl:text-[18px]">Don’t have an account? <a
-                        href="#" class="font-medium underline cursor-pointer">Sign Up<img src="../../assets/icons/ic-arrow-top.svg" class="inline w-[20px] h-[20px] 2xl:w-[24px] h-[24px]
+                        href="../login/index.html" class="font-medium underline hover:text-[#FF9500] cursor-pointer">Login<img src="../../assets/icons/ic-arrow-top.svg" class="inline w-[20px] h-[20px] 2xl:w-[24px] h-[24px]
                 ml-[6px]"></a></p>
             </div>
         </div>
