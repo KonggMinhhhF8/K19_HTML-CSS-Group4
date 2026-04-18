@@ -17,21 +17,21 @@
 </head>
 <body class="bg-[#F7F7F8]">
 <!--    Top-Banner      -->
-<div class="w-full mt-[40px] md:mt-[20px]">
-    <div class="max-w-[358px] mx-auto h-[41px] bg-[#FF9500] rounded-[6px] flex items-center justify-center gap-[12px]
+<div class="w-full mt-[40px] md:mt-[20px] px-4 md:px-6 xl:px-10 2xl:px-20">
+    <div class="w-full mx-auto h-[41px] bg-[#FF9500] rounded-[6px] flex items-center justify-center gap-[12px]
     cursor-pointer transition-all duration-300 hover:bg-[#E68600] hover:shadow-md
-    md:max-w-[1400px] md:gap-[23px]
-    2xl:max-w-[1860px] 2xl: h-[55px] 2xl:rounded-[8px]">
+     md:gap-[23px]
+     2xl:h-[55px] 2xl:rounded-[8px]">
         <p class="text-white text-[14px] leading-[1.5] font-normal
         2xl:text-[18px]">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <img src="../../assets/icons/ic-arrow.svg" alt="Arrow Icon" class="w-[20px] h-[20px] 2xl:w-[24px] 2xl:h-[24px]">
     </div>
 </div>
 <!--    Header      -->
-<header class="w-full relative">
-    <div class="max-w-[358px] flex items-center justify-between mx-auto h-[73px]
-    md:max-w-[1280px] md:h-[81px]
-    2xl:max-w-[1596px] 2xl:h-[99px]">
+<header class="w-full sticky top-0 z-[100] bg-[#F7F7F8] border-b border-[#F1F1F3] px-4 md:px-10 xl:px-20 2xl:px-40">
+    <div class="w-full flex items-center justify-between mx-auto h-[73px]
+     md:h-[81px]
+     2xl:h-[99px]">
         <div class="flex items-center flex-shrink-0 gap-[50px]">
             <img src="../../assets/icons/ic-logo.svg" alt="logo icon" class="w-[40px] h-[40px] md:w-[44px] md:h-[44px]
             2xl:w-[54px] 2xl:h-[54px] cursor-pointer">
@@ -51,20 +51,37 @@
                 hover:bg-[#E68600] hover:shadow-md cursor-pointer
                             md:w-[86px]
                             2xl:w-[117px] 2xl:h-[55px] rounded-[8px]">Login</button>
-            <div class="flex md:hidden">
+            <div class="flex md:hidden z-100">
                 <input type="checkbox" id="menu-toggle" class="peer hidden"/>
-                <label for="menu-toggle" class="cursor-pointer">
+                <label for="menu-toggle" class=" cursor-pointer">
                     <img src="../../assets/icons/ic-menu.svg" alt="Menu Icon" class="w-[34px] h-[34px]">
                 </label>
-                <div class="fixed top-[160px] left-0 w-full bg-white transition-all duration-500 max-h-0
-                            peer-checked:max-h-screen shadow-2xl overflow-hidden">
+                <label for="menu-toggle" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none peer-checked:opacity-100
+                peer-checked:pointer-events-auto"></label>
+                <div class="fixed top-0 right-0 w-[80%] h-full max-w-[360px] bg-white transition-transform duration-500
+                            ease-in-out translate-x-full peer-checked:translate-x-0 rounded-l-[20px] shadow-2xl overflow-hidden">
+                    <div
+                            class="flex justify-between items-center w-full border-b border-[#E1E1E3] pb-5 mb-4"
+                    >
+                        <!-- Logo -->
+                        <img
+                                src="../../assets/icons/ic-logo.svg"
+                                alt="Logo"
+                                class="relative top-2 left-4 w-10 h-10 md:w-11 md:h-11 md:mr-10 lg:w-13.5 lg:h-13.5 cursor-pointer"
+                        />
+                        <label
+                                for="menu-toggle"
+                                class="absolute top-4 right-4 text-3xl leading-none text-gray-500 cursor-pointer"
+                                aria-label="Close menu"
+                        >&times;</label>
+                    </div>
                     <nav>
-                        <ul class="flex flex-col items-center gap-6 py-4">
-                            <li><a href="#" class="hover:text-[#FF9500]">Home</a></li>
-                            <li><a href="#" class="hover:text-[#FF9500]">Courses</a></li>
-                            <li><a href="#" class="hover:text-[#FF9500]">About Us</a></li>
-                            <li><a href="#" class="hover:text-[#FF9500]">Pricing</a></li>
-                            <li><a href="#" class="hover:text-[#FF9500]">Contact</a></li>
+                        <ul class="flex flex-col items-center gap-6 py-4 border-b border-[#F1F1F3]">
+                            <li><a href="#" class="hover:text-[#FF9500] text-[18px] font-medium">Home</a></li>
+                            <li><a href="#" class="hover:text-[#FF9500] text-[18px] font-medium">Courses</a></li>
+                            <li><a href="#" class="hover:text-[#FF9500] text-[18px] font-medium">About Us</a></li>
+                            <li><a href="#" class="hover:text-[#FF9500] text-[18px] font-medium">Pricing</a></li>
+                            <li><a href="#" class="hover:text-[#FF9500] text-[18px] font-medium">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -73,8 +90,9 @@
     </div>
 </header>
 <!--    Section     -->
-<section class="w-full mt-[50px] md:mt-[80px] 2xl:mt-[100px]">
-    <div class="max-w-[357px] mx-auto md:max-w-[1280px] 2xl:max-w-[1596px] md:flex md:gap-[80px] 2xl:gap-[100px]">
+<section class="w-full mt-[50px] md:mt-[80px] 2xl:mt-[100px] px-4 md:px-10 xl:px-20 2xl:px-40">
+    <div class="w-full mx-auto md:flex md:gap-[20px] lg:gap-[60px] xl:gap-[80px] 2xl:gap-[100px]
+                items-start">
         <div class="order-1 md:order-2 bg-white rounded-[10px] py-[30px] px-[40px] border border-[#F1F1F3] md:p-[40px]
         2xl:p-[50px]">
             <div class="text-center leading-none">
@@ -136,18 +154,18 @@
             </div>
         </div>
 <!--    Students Testimonials    -->
-        <div class="flex-1 order-2 md:order-1 leading-[1.5] mt-[50px] md:mt-[100px]">
-            <div class="mb-[40px] md:mb-[60px] 2xl:mb-[80px]">
+        <div class="flex-1 order-2 md:order-1 leading-[1.5] mt-[50px] md:mt-[20px] lg:mt-[100px]">
+            <div class="mb-[40px]  lg:mb-[60px] 2xl:mb-[80px]">
                 <h2 class="text-[28px] font-medium text-[#262626] mb-[4px]
                         md:text-[30px] 2xl:text-[38px] 2xl:mb-[6px]">Students Testimonials</h2>
                 <p class="text-[14px] font-normal text-[#59595A] md:text-[16px] 2xl:text-[18px]">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
             </div>
-            <div class="bg-white border border-[#F1F1F3] py-[30px] pl-[30px] pr-[35px] rounded-t-[10px] md:p-[40px]
+            <div class="bg-white border border-[#F1F1F3] py-[30px] pl-[30px] pr-[35px] rounded-t-[10px] md:p-[20px] lg:p-[40px]
             2xl:p-[50px] 2xl:rounded-t-[12px]">
                 <p class="text-[14px] font-normal text-[#4C4C4D] md:text-[16px] 2xl:text-[18px]">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
             </div>
             <div class="flex justify-between items-center bg-white mt-[1px] px-[30px] py-[20px] rounded-b-[10px]
-            md:px-[40px] md:py-[24px] 2xl:px-[50px] 2xl:py-[30px] 2xl:rounded-b-[12px]">
+             lg:px-[40px] md:py-[24px] md:flex-wrap md:gap-[16px] md:px-[20px] 2xl:px-[50px] 2xl:py-[30px] 2xl:rounded-b-[12px]">
                 <div class="flex items-center gap-[10px] 2xl:gap-[15px]">
                     <img src="../../assets/images/login/avatar-femal.png" alt="Sarah" class="w-[50px] h-[50px]
                     rounded-[6px] 2xl:hidden">
@@ -175,12 +193,13 @@
         </div>
     </div>
 </section>
-<footer class="bg-white leading-[1.5] mt-[50px] border-t border-[#F1F1F3] md:mt-[100px] 2xl:mt-[150px]">
-    <div class="max-w-[358px] mx-auto flex flex-col gap-[24px] border-b-[1px] border-[#F1F1F3] pt-[50px] pb-[20px]
-            md:max-w-[1280px] md:flex-row md:pt-[60px] md:pb-[30px]
-            2xl:max-w-[1596px] 2xl:pt-[100px] 2xl:pb-[50px]">
+<!--    Footer      -->
+<footer class="bg-white leading-[1.5] mt-[50px] border-t border-[#F1F1F3] min-[850px]:mt-[100px] 2xl:mt-[150px] px-4 md:px-10 xl:px-20 2xl:px-40">
+    <div class="w-full mx-auto flex flex-col gap-[24px] border-b-[1px] border-[#F1F1F3] pt-[50px] pb-[20px]
+             sm:flex-row md:pt-[60px] md:pb-[30px]
+             2xl:pt-[100px] 2xl:pb-[50px] ">
 <!--        Info        -->
-        <div class="md:basis-5/12 2xl:basis-6/12">
+        <div class="md:basis-4/12 lg:basis-5/12 2xl:basis-6/12">
             <img src="../../assets/icons/ic-logo.svg" class="w-[44px] h-[44px] rounded-[6px] mb-[30px]
                                                          2xl:w-[54px] h-[54px] 2xl:rounded-[8px] 2xl:mb-[40px]" alt="logo">
             <div class="text-[15px] text-[#262626] font-normal flex flex-col gap-[12.5px]
@@ -198,7 +217,7 @@
         </div>
 
             <!--        Navigation      -->
-            <div class="flex gap-[60px] md:gap-[140px] md:basis-4/12 2xl:basis-3/12">
+            <div class="flex gap-[60px] xl:gap-[140px] md:basis-4/12 2xl:basis-3/12">
                 <div>
                     <h4 class="text-[18px] text-[#262626] font-semibold mb-[10px] 2xl:text-[20px] 2xl:mb-[14px]">Home</h4>
                     <ul class="text-[14px] text-[#59595A] font-normal flex flex-col gap-[4px]
@@ -224,15 +243,18 @@
                 <h4 class="text-[18px] text-[#262626] font-semibold mb-[10px] md:mb-[14px] 2xl:text-[20px]">Social Profiles</h4>
                 <div class="flex items-center gap-[14px]">
                     <a href="#" class="flex items-center justify-center rounded-[6px] bg-[#F1F1F3] w-[44px] h-[44px]
-                                    2xl:rounded-[8px] 2xl:w-[52px] h-[52px]">
+                                    2xl:rounded-[8px] 2xl:w-[52px] h-[52px] transition-all duration-300
+                hover:bg-[#FF9500] hover:shadow-md">
                         <img src="../../assets/icons/ic-facebook.svg" class="w-[20px] h-[20px] 2xl:w-[24px] h-[24px]" alt="facebook">
                     </a>
                     <a href="#" class="flex items-center justify-center rounded-[6px] bg-[#F1F1F3] w-[44px] h-[44px]
-                                    2xl:rounded-[8px] 2xl:w-[52px] h-[52px]">
+                                    2xl:rounded-[8px] 2xl:w-[52px] h-[52px] transition-all duration-300
+                hover:bg-[#FF9500] hover:shadow-md">
                         <img src="../../assets/icons/ic-twitter.svg" class="w-[20px] h-[20px] 2xl:w-[24px] h-[24px]" alt="twitter">
                     </a>
                     <a href="#" class="flex items-center justify-center rounded-[6px] bg-[#F1F1F3] w-[44px] h-[44px]
-                                    2xl:rounded-[8px] 2xl:w-[52px] h-[52px]">
+                                    2xl:rounded-[8px] 2xl:w-[52px] h-[52px] transition-all duration-300
+                hover:bg-[#FF9500] hover:shadow-md">
                         <img src="../../assets/icons/ic-linkedin.svg" class="w-[20px] h-[20px] 2xl:w-[24px] h-[24px]" alt="linkedIn">
                     </a>
                 </div>
