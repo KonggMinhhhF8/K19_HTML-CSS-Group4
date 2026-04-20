@@ -39,7 +39,8 @@
         <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
           <img src="../../assets/img/logo/logo.svg" alt="Logo" class="w-7 h-7 object-contain" />
         </div>
-
+        <!-- menu mobile -->
+         <input type="checkbox" id="menu-toggle" class="hidden" />
         <div class="hidden md:flex items-center gap-1 text-zinc-900 font-medium">
           <a href="../../index.html" class="px-5 py-2.5 bg-zinc-200/70 rounded-md">Home</a>
           <a href="../courses/index.html" class="px-5 py-2.5 hover:bg-zinc-100 rounded-md transition">Courses</a>
@@ -54,9 +55,18 @@
         <a href="../pages/login/index.html" class="px-8 py-3 bg-amber-500 text-white rounded-md font-bold shadow-md hover:bg-amber-600 transition">
           Login
         </a>
+        <div class="md:hidden flex items-center ml-4">
+        <label for="menu-toggle" class="cursor-pointer p-2 text-zinc-800">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+      </div>
       </div>
     </div>
+    
   </nav>
+      
 </div>
 </div>
 
