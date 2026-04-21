@@ -1,0 +1,2297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body class="leading-[150%] bg-[#F7F7F8]">
+<input
+        type="checkbox"
+        name="mobile-menu-toggle"
+        id="mobile-menu-toggle"
+        hidden
+/>
+<!-- Promo Bar -->
+<div
+        class="promo-bar-wrapper mt-10 px-4 bg-[#F7F7F8] lg:mt-5 2xl:px-7.5"
+>
+    <div
+            class="promo-bar flex items-center justify-center mx-auto gap-3 px-4 py-2.5 rounded-md text-sm font-normal text-white bg-[#FF9500] lg:gap-5.75 2xl:rounded-lg 2xl:py-3.5 2xl:text-lg cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E68600] hover:shadow-lg"
+    >
+        <div class="promo-bar__text">
+            Free Courses 🌟 Sale Ends Soon, Get It Now
+        </div>
+
+        <div
+                class="promo-bar__icon flex items-center justify-center w-5 h-5 2xl:w-6 2xl:h-6"
+        >
+            <img src="assets/icons/arrow-right.svg" alt="Arrow Right" />
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header sticky top-0 z-50 px-4 bg-[#F7F7F8] 2xl:px-7.5">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div
+                class="wrapper flex items-center justify-between py-3.5 border-b border-[#F1F1F3] text-sm sm:px-15 lg:py-4 2xl:px-33 2xl:py-5 2xl:text-lg"
+        >
+            <!-- Logo -->
+            <a
+                    class="navbar__logo block w-10 h-10 lg:w-11 lg:h-11 2xl:w-13.5 2xl:h-13.5 cursor-pointer"
+            >
+                <img
+                        class="w-full"
+                        src="assets/img/logo/logo.svg"
+                        alt="Logo"
+                />
+            </a>
+
+            <!-- Navigation Menu -->
+            <ul
+                    class="navbar__menu hidden items-center mr-auto ml-12.5 gap-1 lg:flex"
+            >
+                <li class="navbar__menu-item">
+                    <a
+                            href="index.html"
+                            class="navbar__menu-link block px-5 py-3 border border-[#F1F1F3] rounded-md bg-[#F1F1F3] transition-all duration-100 hover:text-[#E68600]"
+                    >Home</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="pages/courses/index.html"
+                            class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                    >Courses</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="pages/about/index.html"
+                            class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                    >About Us</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="pages/pricing/index.html"
+                            class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                    >Pricing</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="#contact"
+                            class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                    >Contact</a
+                    >
+                </li>
+            </ul>
+
+            <!-- Authentication Links -->
+            <div class="navbar__auth flex ml-auto mr-5 gap-2 lg:mr-0">
+                <a
+                        href="pages/sign-up/index.html"
+                        class="navbar__signup block px-6 py-3 rounded-md text-[#262626] cursor-pointer transition-all duration-100 hover:text-[#E68600]"
+                >
+                    Sign Up
+                </a>
+
+                <a
+                        href="pages/login/index.html"
+                        class="navbar__login block px-6 py-3 rounded-md text-white bg-[#FF9500] cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E68600] hover:shadow-lg"
+                >
+                    Login
+                </a>
+            </div>
+
+            <!-- Mobile Toggle Button -->
+            <label
+                    class="navbar__toggle block w-[1.59375rem] h-[1.0625rem] lg:hidden cursor-pointer"
+                    for="mobile-menu-toggle"
+            >
+                <img
+                        src="assets/icons/mobile-menu-toggle-icon.svg"
+                        alt="Toggle Menu"
+                />
+            </label>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+                class="mobile-menu fixed top-0 right-[-85vw] z-50 flex flex-col items-center w-[85vw] h-screen gap-6.25 rounded-l-[3.125rem] bg-white transition-all duration-300 ease-in-out"
+        >
+            <div class="mobile-menu__header w-full mt-4 pl-4.75 pr-2">
+                <div
+                        class="wrapper flex items-center justify-between w-full py-3.5 border-b border-[#F1F1F3]"
+                >
+                    <a class="mobile-menu__logo block w-10 h-10">
+                        <img
+                                src="assets/img/logo/logo.svg"
+                                alt="Logo"
+                        />
+                    </a>
+
+                    <label
+                            class="mobile-menu__close flex items-center justify-center w-10 h-10 cursor-pointer"
+                            for="mobile-menu-toggle"
+                    >
+                        <img
+                                class="w-[1.40625rem] h-[1.40625rem]"
+                                src="assets/icons/close-btn.svg"
+                                alt="Close Menu"
+                        />
+                    </label>
+                </div>
+            </div>
+
+            <ul
+                    class="mobile-menu__list flex flex-col w-full gap-5 text-center text-base"
+            >
+                <li class="navbar__menu-item">
+                    <a
+                            href="index.html"
+                            class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                    >Home</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="pages/courses/index.html"
+                            class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                    >Courses</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="pages/about/index.html"
+                            class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                    >About Us</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="pages/pricing/index.html"
+                            class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                    >Pricing</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a
+                            href="#contact"
+                            class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                    >Contact</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- Overlay -->
+        <label
+                for="mobile-menu-toggle"
+                class="overlay block fixed inset-0 z-49 opacity-0 invisible pointer-events-none bg-[#808080] cursor-pointer transition-all duration-300 ease-in-out"
+        ></label>
+    </div>
+</header>
+
+<!-- Main Container -->
+<main class="mx-auto w-full px-4 pt-12.5 lg:p-20 lg:pb-0 2xl:max-w-455">
+    <!-- Hero Section -->
+    <section
+            class="hero flex flex-col items-center mx-auto w-full text-center sm:w-fit lg:w-236 lg:px-37 lg:gap-2.5"
+    >
+        <!-- Hero Badge -->
+        <div
+                class="hero__badge relative flex items-center justify-center w-full gap-2.5 p-3.5 rounded-lg text-base font-semibold bg-[#FCFCFD] lg:py-3 lg:pl-3 lg:pr-6"
+        >
+            <!-- Hero Badge Icon -->
+            <div
+                    class="hero__badge-icon flex items-center justify-center p-3 rounded-md bg-[#FFF4E5]"
+            >
+                <img
+                        class="w-6 h-6"
+                        src="assets/icons/hero-icon.svg"
+                        alt="Hero Icon"
+                />
+            </div>
+
+            <!-- Hero Badge Text -->
+            <span
+                    class="hero__badge-text font-semibold text-[#1A1A1A] lg:text-4xl 2xl:text-5xl"
+            >
+                        <strong class="text-[#FF9500]">Unlock</strong> Your
+                        Creative Potential
+                    </span>
+
+            <div
+                    class="hero__badge-decoration absolute -top-5 -left-2.5 w-10 h-11 lg:-top-7.5 lg:-left-6"
+            >
+                <img
+                        class="w-full h-full"
+                        src="assets/icons/hero-badge-decoration.svg"
+                        alt="Hero Decoration"
+                />
+            </div>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1
+                class="hero__heading mt-4 text-2xl font-medium text-[#262626] lg:text-[1.75rem] 2xl:text-[2.375rem]"
+        >
+            with Online Design and Development Courses.
+        </h1>
+
+        <!-- Hero Desc -->
+        <p
+                class="hero__desc mt-1.5 text-sm text-[#262626] lg:text-base"
+        >
+            Learn from Industry Experts and Enhance Your Skills.
+        </p>
+
+        <!-- Hero Actions -->
+        <div
+                class="hero__actions flex justify-center mt-12.5 gap-3 text-sm"
+        >
+            <a
+                    href="#"
+                    class="hero__btn hero__btn--primary block px-5 py-3.5 rounded-md font-semibold text-[#FFFFFF] bg-[#FF9500] transition-all duration-300 2xl:text-lg hover:-translate-y-0.5 hover:bg-[#E68600] hover:shadow-lg"
+            >
+                Explore Courses
+            </a>
+
+            <a
+                    href="pages/pricing/index.html"
+                    class="hero__btn hero__btn--secondary block px-5 py-3.5 rounded-md font-semibold text-[#262626] bg-[#F1F1F3] transition-all duration-300 2xl:text-lg hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+            >
+                View Pricing
+            </a>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase mt-5 w-full lg:mt-22.5">
+        <!-- Brand Logos -->
+        <div class="showcase__brands w-full">
+            <!-- Brand List -->
+            <ul
+                    class="showcase__brand-list flex w-full gap-0 overflow-x-auto p-2.5 border border-[#F1F1F3] rounded-lg scrollbar-width:none lg:p-6 2xl:p-7.5 [&::-webkit-scrollbar]:hidden"
+            >
+                <!-- Zapier -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://zapier.com/"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/zapier.svg"
+                                alt="Zapier"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+
+                <!-- Spotify -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://open.spotify.com/"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/spotify.svg"
+                                alt="Spotify"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+
+                <!-- Zoom -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://zoom.us/"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/zoom.svg"
+                                alt="Zoom"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+
+                <!-- Amazon -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://www.amazon.com/"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/amazon.svg"
+                                alt="Amazon"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+
+                <!-- Adobe -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://www.adobe.com/"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/adobe.svg"
+                                alt="Adobe"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+
+                <!-- Notion -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://www.notion.com/vi"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/notion.svg"
+                                alt="Notion"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+
+                <!-- Netflix -->
+                <li
+                        class="showcase__brand-item flex items-center justify-center w-[calc(100%/3)] shrink-0 px-7.5 py-5 border-r border-[#F1F1F3] md:w-[calc(100%/4)] lg:w-[calc(100%/7)]"
+                >
+                    <a
+                            rel="noopener"
+                            href="https://www.netflix.com/vn/"
+                            target="_blank"
+                            class="showcase__brand-link block w-full"
+                    >
+                        <img
+                                src="assets/img/brands/netflix.svg"
+                                alt="Netflix"
+                                class="showcase__brand-logo w-full h-full transition-transform duration-200 hover:scale-105"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Media Preview -->
+        <div
+                class="showcase__media relative mt-7.5 overflow-hidden rounded-[0.625rem] lg:mt-20 2xl:mt-25"
+        >
+            <!-- Img -->
+            <img
+                    src="assets/img/showcase/showcase-preview.png"
+                    alt="Online learning preview"
+                    class="showcase__media-image w-full h-full cursor-pointer"
+            />
+
+            <!-- Overlay -->
+            <div
+                    class="showcase__media-overlay absolute inset-0 bg-black/20 cursor-pointer"
+            ></div>
+
+            <!-- Button -->
+            <button
+                    class="showcase__play-btn absolute top-1/2 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 lg:w-20 lg:h-20 2xl:w-30 2xl:h-30 cursor-pointer"
+            >
+                <img
+                        src="assets/icons/play.svg"
+                        alt="Play video"
+                        class="showcase__play-icon w-full h-full"
+                />
+            </button>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section
+            id="benefits"
+            class="benefits mt-12.5 lg:mt-25 2xl:mt-37.5"
+    >
+        <!-- Section Header -->
+        <div
+                class="benefits__header flex flex-col items-start lg:flex-row lg:justify-between"
+        >
+            <div
+                    class="benefits__content flex flex-col items-start justify-between gap-1 md:w-[70%]"
+            >
+                <h2
+                        class="benefits__heading py-2 text-[1.75rem] font-semibold text-[#262626] lg:text-[2.375rem] 2xl:text-5xl"
+                >
+                    Benefits
+                </h2>
+
+                <p
+                        class="benefits__desc mt-1 text-sm text-[#59595A] lg:text-base 2xl:text-lg"
+                >
+                    Lorem ipsum dolor sit amet consectetur. Tempus
+                    tincidunt etiam eget elit id imperdiet et. Cras eu
+                    sit dignissim lorem nibh et. Ac cum eget habitasse
+                    in velit fringilla feugiat senectus in.
+                </p>
+            </div>
+
+            <a
+                    href="#"
+                    class="benefits__view-all block mt-5 px-5 py-3.5 border border-[#F1F1F3] rounded-md text-sm bg-[#FCFCFD] lg:mt-auto 2xl:px-6 2xl:py-4.5 2xl:rounded-lg 2xl:text-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+            >
+                View All
+            </a>
+        </div>
+
+        <!-- Benefits List -->
+        <div
+                class="benefits__list flex flex-wrap mt-10 gap-5 text-[#262626] lg:mt-15 2xl:mt-20"
+        >
+            <!-- Card 01 -->
+            <article
+                    class="benefit-card flex flex-col w-full p-7.5 rounded-[0.675rem] bg-[#FFFFFF] md:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] lg:p-10"
+            >
+                        <span
+                                class="benefit-card__number ml-auto leading-[100%] text-[3.125rem] font-bold lg:text-6xl 2xl:text-[5rem]"
+                        >01</span
+                        >
+                <h3
+                        class="benefit-card__title mt-7.5 text-xl font-semibold text-[#333333] lg:mt-10 2xl:mt-12.5 2xl:text-2xl"
+                >
+                    Flexible Learning Schedule
+                </h3>
+                <p
+                        class="benefit-card__desc mt-2.5 flex-1 text-sm text-[#4C4C4D] lg:text-base 2xl:mt-3.5 2xl:text-lg"
+                >
+                    Fit your coursework around your existing commitments
+                    and obligations.
+                </p>
+                <a
+                        href="#"
+                        class="benefit-card__link block ml-auto mt-7.5 p-3.5 border border-[#F1F1F3] rounded-md bg-[#FCFCFD] lg:mt-10 2xl:mt-12.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+                >
+                    <img
+                            src="assets/icons/arrow-up-right.svg"
+                            alt="View benefit"
+                            class="benefit-card__icon w-full h-full"
+                    />
+                </a>
+            </article>
+
+            <!-- Card 02 -->
+            <article
+                    class="benefit-card flex flex-col w-full p-7.5 rounded-[0.675rem] bg-[#FFFFFF] md:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] lg:p-10"
+            >
+                        <span
+                                class="benefit-card__number ml-auto leading-[100%] text-[3.125rem] font-bold lg:text-6xl 2xl:text-[5rem]"
+                        >02</span
+                        >
+                <h3
+                        class="benefit-card__title mt-7.5 text-xl font-semibold text-[#333333] lg:mt-10 2xl:mt-12.5 2xl:text-2xl"
+                >
+                    Expert Instruction
+                </h3>
+                <p
+                        class="benefit-card__desc mt-2.5 flex-1 text-sm text-[#4C4C4D] lg:text-base 2xl:mt-3.5 2xl:text-lg"
+                >
+                    Learn from industry experts who have hands-on
+                    experience in design and development.
+                </p>
+                <a
+                        href="#"
+                        class="benefit-card__link block ml-auto mt-7.5 p-3.5 border border-[#F1F1F3] rounded-md bg-[#FCFCFD] lg:mt-10 2xl:mt-12.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+                >
+                    <img
+                            src="assets/icons/arrow-up-right.svg"
+                            alt="View benefit"
+                            class="benefit-card__icon w-full h-full"
+                    />
+                </a>
+            </article>
+
+            <!-- Card 03 -->
+            <article
+                    class="benefit-card flex flex-col w-full p-7.5 rounded-[0.675rem] bg-[#FFFFFF] md:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] lg:p-10"
+            >
+                        <span
+                                class="benefit-card__number ml-auto leading-[100%] text-[3.125rem] font-bold lg:text-6xl 2xl:text-[5rem]"
+                        >03</span
+                        >
+                <h3
+                        class="benefit-card__title mt-7.5 text-xl font-semibold text-[#333333] lg:mt-10 2xl:mt-12.5 2xl:text-2xl"
+                >
+                    Diverse Course Offerings
+                </h3>
+                <p
+                        class="benefit-card__desc mt-2.5 flex-1 text-sm text-[#4C4C4D] lg:text-base 2xl:mt-3.5 2xl:text-lg"
+                >
+                    Explore a wide range of design and development
+                    courses covering various topics.
+                </p>
+                <a
+                        href="#"
+                        class="benefit-card__link block ml-auto mt-7.5 p-3.5 border border-[#F1F1F3] rounded-md bg-[#FCFCFD] lg:mt-10 2xl:mt-12.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+                >
+                    <img
+                            src="assets/icons/arrow-up-right.svg"
+                            alt="View benefit"
+                            class="benefit-card__icon w-full h-full"
+                    />
+                </a>
+            </article>
+
+            <!-- Card 04 -->
+            <article
+                    class="benefit-card flex flex-col w-full p-7.5 rounded-[0.675rem] bg-[#FFFFFF] md:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] lg:p-10"
+            >
+                        <span
+                                class="benefit-card__number ml-auto leading-[100%] text-[3.125rem] font-bold lg:text-6xl 2xl:text-[5rem]"
+                        >04</span
+                        >
+                <h3
+                        class="benefit-card__title mt-7.5 text-xl font-semibold text-[#333333] lg:mt-10 2xl:mt-12.5 2xl:text-2xl"
+                >
+                    Updated Curriculum
+                </h3>
+                <p
+                        class="benefit-card__desc mt-2.5 flex-1 text-sm text-[#4C4C4D] lg:text-base 2xl:mt-3.5 2xl:text-lg"
+                >
+                    Access courses with up-to-date content reflecting
+                    the latest trends and industry practices.
+                </p>
+                <a
+                        href="#"
+                        class="benefit-card__link block ml-auto mt-7.5 p-3.5 border border-[#F1F1F3] rounded-md bg-[#FCFCFD] lg:mt-10 2xl:mt-12.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+                >
+                    <img
+                            src="assets/icons/arrow-up-right.svg"
+                            alt="View benefit"
+                            class="benefit-card__icon w-full h-full"
+                    />
+                </a>
+            </article>
+
+            <!-- Card 05 -->
+            <article
+                    class="benefit-card flex flex-col w-full p-7.5 rounded-[0.675rem] bg-[#FFFFFF] md:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] lg:p-10"
+            >
+                        <span
+                                class="benefit-card__number ml-auto leading-[100%] text-[3.125rem] font-bold lg:text-6xl 2xl:text-[5rem]"
+                        >05</span
+                        >
+                <h3
+                        class="benefit-card__title mt-7.5 text-xl font-semibold text-[#333333] lg:mt-10 2xl:mt-12.5 2xl:text-2xl"
+                >
+                    Practical Projects and Assignments
+                </h3>
+                <p
+                        class="benefit-card__desc mt-2.5 flex-1 text-sm text-[#4C4C4D] lg:text-base 2xl:mt-3.5 2xl:text-lg"
+                >
+                    Develop a portfolio showcasing your skills and
+                    abilities to potential employers.
+                </p>
+                <a
+                        href="#"
+                        class="benefit-card__link block ml-auto mt-7.5 p-3.5 border border-[#F1F1F3] rounded-md bg-[#FCFCFD] lg:mt-10 2xl:mt-12.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+                >
+                    <img
+                            src="assets/icons/arrow-up-right.svg"
+                            alt="View benefit"
+                            class="benefit-card__icon w-full h-full"
+                    />
+                </a>
+            </article>
+
+            <!-- Card 06 -->
+            <article
+                    class="benefit-card flex flex-col w-full p-7.5 rounded-[0.675rem] bg-[#FFFFFF] md:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] lg:p-10"
+            >
+                        <span
+                                class="benefit-card__number ml-auto leading-[100%] text-[3.125rem] font-bold lg:text-6xl 2xl:text-[5rem]"
+                        >06</span
+                        >
+                <h3
+                        class="benefit-card__title mt-7.5 text-xl font-semibold text-[#333333] lg:mt-10 2xl:mt-12.5 2xl:text-2xl"
+                >
+                    Interactive Learning Environment
+                </h3>
+                <p
+                        class="benefit-card__desc mt-2.5 flex-1 text-sm text-[#4C4C4D] lg:text-base 2xl:mt-3.5 2xl:text-lg"
+                >
+                    Collaborate with fellow learners, exchanging ideas
+                    and feedback to enhance your understanding.
+                </p>
+                <a
+                        href="#"
+                        class="benefit-card__link block ml-auto mt-7.5 p-3.5 border border-[#F1F1F3] rounded-md bg-[#FCFCFD] lg:mt-10 2xl:mt-12.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+                >
+                    <img
+                            src="assets/icons/arrow-up-right.svg"
+                            alt="View benefit"
+                            class="benefit-card__icon w-full h-full"
+                    />
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Our Courses Section -->
+    <section id="courses" class="courses mt-12.5 lg:mt-25">
+        <!-- Section Header -->
+        <div
+                class="courses__header flex flex-col items-start lg:flex-row lg:justify-between"
+        >
+            <div
+                    class="courses__content flex flex-col items-start justify-between gap-1 md:w-[70%]"
+            >
+                <h2
+                        class="courses__heading py-2 text-[1.75rem] font-semibold text-[#262626] lg:text-[2.375rem] 2xl:text-5xl"
+                >
+                    Our Courses
+                </h2>
+                <p
+                        class="courses__desc mt-1 text-sm text-[#59595A] lg:text-base 2xl:text-lg"
+                >
+                    Lorem ipsum dolor sit amet consectetur. Tempus
+                    tincidunt etiam eget elit id imperdiet et. Cras eu
+                    sit dignissim lorem nibh et. Ac cum eget habitasse
+                    in velit fringilla feugiat senectus in.
+                </p>
+            </div>
+
+            <a
+                    href="pages/courses-open/index.html"
+                    class="courses__view-all block mt-5 px-5 py-3.5 border border-[#F1F1F3] rounded-md text-sm text-[#262626] bg-[#FCFCFD] lg:mt-auto 2xl:px-6 2xl:py-4.5 2xl:rounded-lg 2xl:text-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+            >
+                View All
+            </a>
+        </div>
+
+        <!-- Courses List -->
+        <div
+                class="courses__list flex flex-wrap mt-10 gap-5 2xl:gap-7.5"
+        >
+            <!-- Card 01 -->
+            <article
+                    class="course-card flex flex-col w-full gap-6 p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] lg:p-10 lg:rounded-[0.625rem] 2xl:w-[calc((100%-1.875rem)/2)] 2xl:gap-7.5 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <!-- Course Thumbnail -->
+                <a
+                        href="#"
+                        class="course-card__thumb block h-64 overflow-hidden rounded-md lg:rounded-lg 2xl:h-95"
+                >
+                    <img
+                            src="assets/img/courses/course-1.png"
+                            alt="Web Design Fundamentals"
+                            class="course-card__image w-full h-full object-cover"
+                    />
+                </a>
+
+                <!-- Course Meta -->
+                <div
+                        class="course-card__meta flex flex-col flex-wrap items-start justify-between gap-3.5 md:flex-row md:items-center"
+                >
+                    <!-- Course Tags -->
+                    <div
+                            class="course-card__tags flex items-center gap-2.5"
+                    >
+                                <span
+                                        class="course-card__duration px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                                >4 Weeks</span
+                                >
+                        <span
+                                class="course-card__level px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                        >Beginner</span
+                        >
+                    </div>
+
+                    <!-- Course Author -->
+                    <span
+                            class="course-card__author cursor-pointer text-base font-medium text-[#262626] 2xl:text-xl hover:underline"
+                    >By John Smith</span
+                    >
+                </div>
+
+                <!-- Course Content -->
+                <div class="course-card__content">
+                    <a
+                            class="course-card__title block cursor-pointer text-lg font-semibold text-[#262626] lg:text-xl 2xl:text-2xl"
+                    >
+                        Web Design Fundamentals
+                    </a>
+                    <p
+                            class="course-card__desc mt-2.5 text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        Learn the fundamentals of web design, including
+                        HTML, CSS, and responsive design principles.
+                    </p>
+                </div>
+
+                <!-- Course CTA -->
+                <a
+                        href="#"
+                        class="course-card__btn block px-6 py-3.5 rounded-md text-center text-sm font-medium text-[#262626] bg-[#F7F7F8] 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                >
+                    Get It Now
+                </a>
+            </article>
+
+            <!-- Card 02 -->
+            <article
+                    class="course-card flex flex-col w-full gap-6 p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] lg:p-10 lg:rounded-[0.625rem] 2xl:w-[calc((100%-1.875rem)/2)] 2xl:gap-7.5 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <a
+                        href="#"
+                        class="course-card__thumb block h-64 overflow-hidden rounded-md lg:rounded-lg 2xl:h-95"
+                >
+                    <img
+                            src="assets/img/courses/course-2.png"
+                            alt="UI/UX Design"
+                            class="course-card__image w-full h-full object-cover"
+                    />
+                </a>
+
+                <div
+                        class="course-card__meta flex flex-col flex-wrap items-start justify-between gap-3.5 md:flex-row md:items-center"
+                >
+                    <div
+                            class="course-card__tags flex items-center gap-2.5"
+                    >
+                                <span
+                                        class="course-card__duration px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                                >6 Weeks</span
+                                >
+                        <span
+                                class="course-card__level px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                        >Intermediate</span
+                        >
+                    </div>
+                    <span
+                            class="course-card__author cursor-pointer text-base font-medium text-[#262626] 2xl:text-xl hover:underline"
+                    >By Emily Johnson</span
+                    >
+                </div>
+
+                <div class="course-card__content">
+                    <a
+                            class="course-card__title block cursor-pointer text-lg font-semibold text-[#262626] lg:text-xl 2xl:text-2xl"
+                    >
+                        UI/UX Design
+                    </a>
+                    <p
+                            class="course-card__desc mt-2.5 text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        Master the art of creating intuitive user
+                        interfaces and enhancing user experiences.
+                    </p>
+                </div>
+
+                <a
+                        href="#"
+                        class="course-card__btn block px-6 py-3.5 rounded-md text-center text-sm font-medium text-[#262626] bg-[#F7F7F8] 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                >
+                    Get It Now
+                </a>
+            </article>
+
+            <!-- Card 03 -->
+            <article
+                    class="course-card flex flex-col w-full gap-6 p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] lg:p-10 lg:rounded-[0.625rem] 2xl:w-[calc((100%-1.875rem)/2)] 2xl:gap-7.5 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <a
+                        href="#"
+                        class="course-card__thumb block h-64 overflow-hidden rounded-md lg:rounded-lg 2xl:h-95"
+                >
+                    <img
+                            src="assets/img/courses/course-3.png"
+                            alt="Mobile App Development"
+                            class="course-card__image w-full h-full object-cover"
+                    />
+                </a>
+
+                <div
+                        class="course-card__meta flex flex-col flex-wrap items-start justify-between gap-3.5 md:flex-row md:items-center"
+                >
+                    <div
+                            class="course-card__tags flex items-center gap-2.5"
+                    >
+                                <span
+                                        class="course-card__duration px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                                >8 Weeks</span
+                                >
+                        <span
+                                class="course-card__level px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                        >Intermediate</span
+                        >
+                    </div>
+                    <span
+                            class="course-card__author cursor-pointer text-base font-medium text-[#262626] 2xl:text-xl hover:underline"
+                    >By David Brown</span
+                    >
+                </div>
+
+                <div class="course-card__content">
+                    <a
+                            class="course-card__title block cursor-pointer text-lg font-semibold text-[#262626] lg:text-xl 2xl:text-2xl"
+                    >
+                        Mobile App Development
+                    </a>
+                    <p
+                            class="course-card__desc mt-2.5 text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        Dive into Android and iOS development using
+                        modern frameworks and best practices.
+                    </p>
+                </div>
+
+                <a
+                        href="#"
+                        class="course-card__btn block px-6 py-3.5 rounded-md text-center text-sm font-medium text-[#262626] bg-[#F7F7F8] 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                >
+                    Get It Now
+                </a>
+            </article>
+
+            <!-- Card 04 -->
+            <article
+                    class="course-card flex flex-col w-full gap-6 p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] lg:p-10 lg:rounded-[0.625rem] 2xl:w-[calc((100%-1.875rem)/2)] 2xl:gap-7.5 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <a
+                        href="#"
+                        class="course-card__thumb block h-64 overflow-hidden rounded-md lg:rounded-lg 2xl:h-95"
+                >
+                    <img
+                            src="assets/img/courses/course-4.png"
+                            alt="Graphic Design for Beginners"
+                            class="course-card__image w-full h-full object-cover"
+                    />
+                </a>
+
+                <div
+                        class="course-card__meta flex flex-col flex-wrap items-start justify-between gap-3.5 md:flex-row md:items-center"
+                >
+                    <div
+                            class="course-card__tags flex items-center gap-2.5"
+                    >
+                                <span
+                                        class="course-card__duration px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                                >10 Weeks</span
+                                >
+                        <span
+                                class="course-card__level px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                        >Beginner</span
+                        >
+                    </div>
+                    <span
+                            class="course-card__author cursor-pointer text-base font-medium text-[#262626] 2xl:text-xl hover:underline"
+                    >By Sarah Thompson</span
+                    >
+                </div>
+
+                <div class="course-card__content">
+                    <a
+                            class="course-card__title block cursor-pointer text-lg font-semibold text-[#262626] lg:text-xl 2xl:text-2xl"
+                    >
+                        Graphic Design for Beginners
+                    </a>
+                    <p
+                            class="course-card__desc mt-2.5 text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        Discover the fundamentals of graphic design,
+                        color theory, and layout techniques.
+                    </p>
+                </div>
+
+                <a
+                        href="#"
+                        class="course-card__btn block px-6 py-3.5 rounded-md text-center text-sm font-medium text-[#262626] bg-[#F7F7F8] 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                >
+                    Get It Now
+                </a>
+            </article>
+
+            <!-- Card 05 -->
+            <article
+                    class="course-card flex flex-col w-full gap-6 p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] lg:p-10 lg:rounded-[0.625rem] 2xl:w-[calc((100%-1.875rem)/2)] 2xl:gap-7.5 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <a
+                        href="#"
+                        class="course-card__thumb block h-64 overflow-hidden rounded-md lg:rounded-lg 2xl:h-95"
+                >
+                    <img
+                            src="assets/img/courses/course-5.png"
+                            alt="Front-End Web Development"
+                            class="course-card__image w-full h-full object-cover"
+                    />
+                </a>
+
+                <div
+                        class="course-card__meta flex flex-col flex-wrap items-start justify-between gap-3.5 md:flex-row md:items-center"
+                >
+                    <div
+                            class="course-card__tags flex items-center gap-2.5"
+                    >
+                                <span
+                                        class="course-card__duration px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                                >10 Weeks</span
+                                >
+                        <span
+                                class="course-card__level px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                        >Intermediate</span
+                        >
+                    </div>
+                    <span
+                            class="course-card__author cursor-pointer text-base font-medium text-[#262626] 2xl:text-xl hover:underline"
+                    >By Michael Adams</span
+                    >
+                </div>
+
+                <div class="course-card__content">
+                    <a
+                            class="course-card__title block cursor-pointer text-lg font-semibold text-[#262626] lg:text-xl 2xl:text-2xl"
+                    >
+                        Front-End Web Development
+                    </a>
+                    <p
+                            class="course-card__desc mt-2.5 text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        Build modern responsive websites using HTML,
+                        CSS, JavaScript, and component-based UI.
+                    </p>
+                </div>
+
+                <a
+                        href="#"
+                        class="course-card__btn block px-6 py-3.5 rounded-md text-center text-sm font-medium text-[#262626] bg-[#F7F7F8] 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                >
+                    Get It Now
+                </a>
+            </article>
+
+            <!-- Card 06 -->
+            <article
+                    class="course-card flex flex-col w-full gap-6 p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] lg:p-10 lg:rounded-[0.625rem] 2xl:w-[calc((100%-1.875rem)/2)] 2xl:gap-7.5 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <a
+                        href="#"
+                        class="course-card__thumb block h-64 overflow-hidden rounded-md lg:rounded-lg 2xl:h-95"
+                >
+                    <img
+                            src="assets/img/courses/course-6.png"
+                            alt="Advanced JavaScript"
+                            class="course-card__image w-full h-full object-cover"
+                    />
+                </a>
+
+                <div
+                        class="course-card__meta flex flex-col flex-wrap items-start justify-between gap-3.5 md:flex-row md:items-center"
+                >
+                    <div
+                            class="course-card__tags flex items-center gap-2.5"
+                    >
+                                <span
+                                        class="course-card__duration px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                                >6 Weeks</span
+                                >
+                        <span
+                                class="course-card__level px-3.5 py-2 border border-[#F1F1F3] rounded-md text-sm 2xl:px-4 2xl:py-2.5 2xl:rounded-lg 2xl:text-lg"
+                        >Advanced</span
+                        >
+                    </div>
+                    <span
+                            class="course-card__author cursor-pointer text-base font-medium text-[#262626] 2xl:text-xl hover:underline"
+                    >By Jennifer Wilson</span
+                    >
+                </div>
+
+                <div class="course-card__content">
+                    <a
+                            class="course-card__title block cursor-pointer text-lg font-semibold text-[#262626] lg:text-xl 2xl:text-2xl"
+                    >
+                        Advanced JavaScript
+                    </a>
+                    <p
+                            class="course-card__desc mt-2.5 text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        Take your JavaScript skills to the next level
+                        with async programming and modern ES6+ features.
+                    </p>
+                </div>
+
+                <a
+                        href="#"
+                        class="course-card__btn block px-6 py-3.5 rounded-md text-center text-sm font-medium text-[#262626] bg-[#F7F7F8] 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                >
+                    Get It Now
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials mt-12.5 lg:mt-25">
+        <!-- Section Header -->
+        <div
+                class="testimonials__header flex flex-col items-start lg:flex-row lg:justify-between"
+        >
+            <div
+                    class="testimonials__content flex flex-col items-start justify-between gap-1 md:w-[70%]"
+            >
+                <h2
+                        class="testimonials__heading py-2 text-[1.75rem] font-semibold text-[#262626] lg:text-[2.375rem] 2xl:text-5xl"
+                >
+                    Our Testimonials
+                </h2>
+                <p
+                        class="testimonials__desc mt-1 text-sm text-[#59595A] lg:text-base 2xl:text-lg"
+                >
+                    Lorem ipsum dolor sit amet consectetur. Tempus
+                    tincidunt etiam eget elit id imperdiet et. Cras eu
+                    sit dignissim lorem nibh et. Ac cum eget habitasse
+                    in velit fringilla feugiat senectus in.
+                </p>
+            </div>
+
+            <a
+                    href="#"
+                    class="testimonials__view-all block mt-5 px-5 py-3.5 border border-[#F1F1F3] rounded-md text-sm text-[#262626] bg-[#FCFCFD] lg:mt-auto 2xl:px-6 2xl:py-4.5 2xl:rounded-lg 2xl:text-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+            >
+                View All
+            </a>
+        </div>
+
+        <!-- Testimonials List -->
+        <div
+                class="testimonials__list flex flex-wrap mt-10 gap-5 2xl:gap-7.5"
+        >
+            <!-- Card 01 -->
+            <article
+                    class="testimonial-card flex flex-col w-full overflow-hidden border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] 2xl:w-[calc((100%-1.875rem)/2)]"
+            >
+                <!-- Testimonial Content -->
+                <div
+                        class="testimonial-card__content flex-1 p-7.5 lg:p-10 2xl:p-12.5"
+                >
+                    <p
+                            class="testimonial-card__text text-sm font-normal text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        The web design course provided a solid
+                        foundation for me. The instructors were
+                        knowledgeable and supportive, and the
+                        interactive learning environment was engaging. I
+                        highly recommend it!
+                    </p>
+                </div>
+
+                <!-- Testimonial Footer -->
+                <div
+                        class="testimonial-card__footer flex items-center justify-between gap-4 px-7.5 py-5 border-t border-[#F1F1F3] bg-[#FCFCFD] lg:px-10 lg:py-6 2xl:px-12.5 2xl:py-7.5"
+                >
+                    <!-- Author -->
+                    <div
+                            class="testimonial-card__author flex items-center gap-3"
+                    >
+                        <img
+                                src="assets/img/testimonials/sarah.png"
+                                alt="Sarah L"
+                                class="testimonial-card__avatar h-12 w-12 rounded-md object-cover cursor-pointer"
+                        />
+                        <span
+                                class="testimonial-card__name cursor-pointer text-base font-semibold text-[#333333] 2xl:text-lg"
+                        >
+                                    Sarah L
+                                </span>
+                    </div>
+
+                    <!-- CTA -->
+                    <a
+                            href="#"
+                            class="testimonial-card__btn block px-4 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-white 2xl:px-6 2xl:py-4.5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                    >
+                        Read Full Story
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 02 -->
+            <article
+                    class="testimonial-card flex flex-col w-full overflow-hidden border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] 2xl:w-[calc((100%-1.875rem)/2)]"
+            >
+                <div
+                        class="testimonial-card__content flex-1 p-7.5 lg:p-10 2xl:p-12.5"
+                >
+                    <p
+                            class="testimonial-card__text text-sm font-normal text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        The UI/UX design course exceeded my
+                        expectations. The instructor’s expertise and
+                        practical assignments helped me improve my
+                        design skills.
+                    </p>
+                </div>
+
+                <div
+                        class="testimonial-card__footer flex items-center justify-between gap-4 px-7.5 py-5 border-t border-[#F1F1F3] bg-[#FCFCFD] lg:px-10 lg:py-6 2xl:px-12.5 2xl:py-7.5"
+                >
+                    <div
+                            class="testimonial-card__author flex items-center gap-3"
+                    >
+                        <img
+                                src="assets/img/testimonials/jason.png"
+                                alt="Jason M"
+                                class="testimonial-card__avatar h-12 w-12 rounded-md object-cover cursor-pointer"
+                        />
+                        <span
+                                class="testimonial-card__name cursor-pointer text-base font-semibold text-[#333333] 2xl:text-lg"
+                        >
+                                    Jason M
+                                </span>
+                    </div>
+
+                    <a
+                            href="#"
+                            class="testimonial-card__btn block px-4 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-white 2xl:px-6 2xl:py-4.5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                    >
+                        Read Full Story
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 03 -->
+            <article
+                    class="testimonial-card flex flex-col w-full overflow-hidden border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] 2xl:w-[calc((100%-1.875rem)/2)]"
+            >
+                <div
+                        class="testimonial-card__content flex-1 p-7.5 lg:p-10 2xl:p-12.5"
+                >
+                    <p
+                            class="testimonial-card__text text-sm font-normal text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        The mobile app development course was fantastic!
+                        The step-by-step tutorials and hands-on projects
+                        helped me build my own app.
+                    </p>
+                </div>
+
+                <div
+                        class="testimonial-card__footer flex items-center justify-between gap-4 px-7.5 py-5 border-t border-[#F1F1F3] bg-[#FCFCFD] lg:px-10 lg:py-6 2xl:px-12.5 2xl:py-7.5"
+                >
+                    <div
+                            class="testimonial-card__author flex items-center gap-3"
+                    >
+                        <img
+                                src="assets/img/testimonials/emily.png"
+                                alt="Emily R"
+                                class="testimonial-card__avatar h-12 w-12 rounded-md object-cover cursor-pointer"
+                        />
+                        <span
+                                class="testimonial-card__name cursor-pointer text-base font-semibold text-[#333333] 2xl:text-lg"
+                        >
+                                    Emily R
+                                </span>
+                    </div>
+
+                    <a
+                            href="#"
+                            class="testimonial-card__btn block px-4 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-white 2xl:px-6 2xl:py-4.5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                    >
+                        Read Full Story
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 04 -->
+            <article
+                    class="testimonial-card flex flex-col w-full overflow-hidden border border-[#F1F1F3] rounded-[0.625rem] bg-white md:w-[calc((100%-1.25rem)/2)] 2xl:w-[calc((100%-1.875rem)/2)]"
+            >
+                <div
+                        class="testimonial-card__content flex-1 p-7.5 lg:p-10 2xl:p-12.5"
+                >
+                    <p
+                            class="testimonial-card__text text-sm font-normal text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                    >
+                        I enrolled in the graphic design course as a
+                        beginner, and it was the perfect starting point.
+                        I’m grateful for this course!
+                    </p>
+                </div>
+
+                <div
+                        class="testimonial-card__footer flex items-center justify-between gap-4 px-7.5 py-5 border-t border-[#F1F1F3] bg-[#FCFCFD] lg:px-10 lg:py-6 2xl:px-12.5 2xl:py-7.5"
+                >
+                    <div
+                            class="testimonial-card__author flex items-center gap-3"
+                    >
+                        <img
+                                src="assets/img/testimonials/michael.png"
+                                alt="Michael K"
+                                class="testimonial-card__avatar h-12 w-12 rounded-md object-cover cursor-pointer"
+                        />
+                        <span
+                                class="testimonial-card__name cursor-pointer text-base font-semibold text-[#333333] 2xl:text-lg"
+                        >
+                                    Michael K
+                                </span>
+                    </div>
+
+                    <a
+                            href="#"
+                            class="testimonial-card__btn block px-4 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-white 2xl:px-6 2xl:py-4.5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                    >
+                        Read Full Story
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing mt-12.5 lg:mt-25">
+        <!-- State Radios -->
+        <input
+                type="radio"
+                name="pricing-toggle"
+                id="pricing-monthly"
+                class="pricing__radio"
+                hidden
+                checked
+        />
+        <input
+                type="radio"
+                name="pricing-toggle"
+                id="pricing-yearly"
+                class="pricing__radio"
+                hidden
+        />
+
+        <!-- Section Header -->
+        <div
+                class="pricing__header flex flex-col items-center md:flex-row md:items-start md:justify-between"
+        >
+            <!-- Pricing Content -->
+            <div
+                    class="pricing__content flex flex-col items-start justify-between gap-1 md:w-[70%]"
+            >
+                <h2
+                        class="pricing__heading py-2 text-[1.75rem] font-semibold text-[#262626] lg:text-[2.375rem] 2xl:text-5xl"
+                >
+                    Our Pricing
+                </h2>
+                <p
+                        class="pricing__desc mt-1 text-sm text-[#59595A] lg:text-base 2xl:text-lg"
+                >
+                    Lorem ipsum dolor sit amet consectetur. Tempus
+                    tincidunt etiam eget elit id imperdiet et. Cras eu
+                    sit dignissim lorem nibh et. Ac cum eget habitasse
+                    in velit fringilla feugiat senectus in.
+                </p>
+            </div>
+
+            <!-- Pricing Toggle -->
+            <div
+                    class="pricing__toggle flex w-fit mt-5 p-3 rounded-lg bg-[#FFFFFF] md:mt-auto"
+            >
+                <label
+                        for="pricing-monthly"
+                        class="pricing__toggle-btn pricing__toggle-btn--monthly px-6 py-3 rounded-md text-sm font-medium text-[#4C4C4D] cursor-pointer transition-all duration-300"
+                >
+                    Monthly
+                </label>
+
+                <label
+                        for="pricing-yearly"
+                        class="pricing__toggle-btn pricing__toggle-btn--yearly px-6 py-3 rounded-md text-sm font-medium text-[#4C4C4D] cursor-pointer transition-all duration-300"
+                >
+                    Yearly
+                </label>
+            </div>
+        </div>
+
+        <!-- Pricing Plans Wrapper -->
+        <div
+                class="pricing__wrapper mt-10 p-5 rounded-[0.75rem] bg-white lg:p-12.5 2xl:p-20"
+        >
+            <!-- Pricing Plans -->
+            <div class="pricing__plans flex flex-wrap gap-7.5">
+                <!-- Free Plan -->
+                <article
+                        class="pricing-card w-full px-5 py-7.5 border border-[#F1F1F3] rounded-[0.75rem] bg-[#FCFCFD] md:w-[calc((100%-1.875rem)/2)] lg:px-6 lg:py-10 2xl:px-7.5 2xl:py-12.5"
+                >
+                    <!-- Plan Badge -->
+                    <div
+                            class="pricing-card__badge px-5.5 py-2 border border-[#FFEACC] rounded-sm text-center text-base font-medium text-[#262626] bg-[#FFF9F0] lg:py-3 lg:text-[1.375rem]"
+                    >
+                        Free Plan
+                    </div>
+
+                    <!-- Plan Price -->
+                    <div
+                            class="pricing-card__price mt-7.5 text-center lg:mt-12.5"
+                    >
+                                <span
+                                        class="pricing-card__amount leading-[100%] text-[3.125rem] font-semibold text-[#262626]"
+                                >$0</span
+                                >
+                        <span
+                                class="pricing-card__duration text-sm text-[#4C4C4D]"
+                        >/month</span
+                        >
+                    </div>
+
+                    <!-- Features -->
+                    <div
+                            class="pricing-card__features mt-7.5 p-5 border border-[#F1F1F3] rounded-t-[0.625rem] bg-white lg:mt-12.5 lg:p-7.5 lg:rounded-t-[0.875rem] 2xl:p-10"
+                    >
+                        <h3
+                                class="pricing-card__features-title text-center text-lg font-medium text-[#262626] 2xl:text-xl"
+                        >
+                            Available Features
+                        </h3>
+
+                        <ul
+                                class="pricing-card__feature-list flex flex-col mt-5 gap-5"
+                        >
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span
+                                >Access to selected free
+                                            courses.</span
+                                >
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Limited course materials and
+                                            resources.
+                                        </span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>Basic community support.</span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span
+                                >No certification upon
+                                            completion.</span
+                                >
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>Ad-supported platform.</span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 border border-[#F1F1F3] rounded-sm 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/uncheck.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Access to exclusive Pro Plan
+                                            community forums.
+                                        </span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 border border-[#F1F1F3] rounded-sm 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/uncheck.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Early access to new courses and
+                                            updates.
+                                        </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA -->
+                    <a
+                            href="#"
+                            class="pricing-card__btn block px-6 py-4.5 rounded-b-md text-center text-sm font-medium text-white bg-[#FF9500] 2xl:py-5 2xl:text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                    >
+                        Get Started
+                    </a>
+                </article>
+
+                <!-- Pro Plan -->
+                <article
+                        class="pricing-card pricing-card--pro w-full px-5 py-7.5 border border-[#F1F1F3] rounded-[0.75rem] bg-[#FCFCFD] md:w-[calc((100%-1.875rem)/2)] lg:px-6 lg:py-10 2xl:px-7.5 2xl:py-12.5"
+                >
+                    <!-- Plan Badge -->
+                    <div
+                            class="pricing-card__badge px-5.5 py-2 border border-[#FFEACC] rounded-sm text-center text-base font-medium text-[#262626] bg-[#FFF9F0] lg:py-3 lg:text-[1.375rem]"
+                    >
+                        Pro Plan
+                    </div>
+
+                    <!-- Plan Price -->
+                    <div
+                            class="pricing-card__price flex items-end justify-center mt-7.5 text-center lg:mt-12.5"
+                    >
+                                <span
+                                        class="pricing-card__amount pricing-card__amount--monthly leading-[100%] text-[3.125rem] font-semibold text-[#262626]"
+                                >
+                                    $79
+                                </span>
+
+                        <span
+                                class="pricing-card__amount pricing-card__amount--yearly hidden leading-[100%] text-[3.125rem] font-semibold text-[#262626]"
+                        >
+                                    $790
+                                </span>
+
+                        <span
+                                class="pricing-card__duration pricing-card__duration--monthly text-sm text-[#4C4C4D]"
+                        >
+                                    /month
+                                </span>
+
+                        <span
+                                class="pricing-card__duration pricing-card__duration--yearly hidden text-sm text-[#4C4C4D]"
+                        >
+                                    /year
+                                </span>
+                    </div>
+
+                    <!-- Features -->
+                    <div
+                            class="pricing-card__features mt-7.5 p-5 border border-[#F1F1F3] rounded-t-[0.625rem] bg-white lg:mt-12.5 lg:p-7.5 lg:rounded-t-[0.875rem] 2xl:p-10"
+                    >
+                        <h3
+                                class="pricing-card__features-title text-center text-lg font-medium text-[#262626] 2xl:text-xl"
+                        >
+                            Available Features
+                        </h3>
+
+                        <ul
+                                class="pricing-card__feature-list flex flex-col mt-5 gap-5"
+                        >
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span
+                                >Unlimited access to all
+                                            courses.</span
+                                >
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Unlimited course materials and
+                                            resources.
+                                        </span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Priority support from instructors.
+                                        </span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Course completion certificates.
+                                        </span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>Ad-free experience.</span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Access to exclusive Pro Plan
+                                            community forums.
+                                        </span>
+                            </li>
+
+                            <li
+                                    class="pricing-card__feature-item flex items-start gap-2 p-3 border border-[#F1F1F3] rounded-md text-sm font-normal lg:gap-3 xl:items-center 2xl:p-3.5 2xl:text-lg"
+                            >
+                                <div
+                                        class="pricing-card__feature-status flex items-center justify-center h-6 w-6 shrink-0 rounded-sm bg-[#FFF4E5] 2xl:h-8 2xl:w-8 2xl:rounded-md"
+                                >
+                                    <img
+                                            src="assets/icons/check.svg"
+                                            alt=""
+                                            class="pricing-card__feature-icon h-4 w-4 2xl:h-5 2xl:w-5"
+                                    />
+                                </div>
+                                <span>
+                                            Early access to new courses and
+                                            updates.
+                                        </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA -->
+                    <a
+                            href="#"
+                            class="pricing-card__btn block px-6 py-4.5 rounded-b-md text-center text-sm font-medium text-white bg-[#FF9500] 2xl:py-5 2xl:text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                    >
+                        Get Started
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section
+            id="faq"
+            class="faq mt-12.5 p-6 rounded-[0.75rem] bg-white lg:flex lg:items-start lg:justify-between lg:gap-20 lg:mt-20 lg:p-20 2xl:mt-37.5 2xl:gap-30 2xl:p-25"
+    >
+        <!-- FAQ Header -->
+        <div class="faq__header flex flex-col items-start lg:w-[32%]">
+            <h2
+                    class="faq__heading text-[1.75rem] font-semibold leading-[120%] text-[#262626] lg:text-[2.375rem] 2xl:text-5xl"
+            >
+                Frequently Asked Questions
+            </h2>
+
+            <p
+                    class="faq__desc mt-2 text-sm text-[#333333] lg:text-base 2xl:mt-2.5 2xl:text-lg"
+            >
+                Still you have any questions? Contact our Team via
+                support@skillbridge.com
+            </p>
+
+            <a
+                    href="#"
+                    class="faq__cta block mt-5 px-5 py-3.5 border border-[#F1F1F3] rounded-md text-sm font-medium text-[#262626] bg-[#FFFFFF] lg:mt-10 2xl:mt-12.5 2xl:px-6 2xl:py-4.5 2xl:rounded-lg 2xl:text-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E4E4E7] hover:shadow-lg"
+            >
+                See All FAQ’s
+            </a>
+        </div>
+
+        <!-- FAQ List -->
+        <div
+                class="faq__list flex flex-col mt-10 gap-5 lg:mt-0 lg:flex-1"
+        >
+            <!-- FAQ Item -->
+            <article
+                    class="faq-item relative p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white lg:p-10 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <input
+                        type="checkbox"
+                        id="faq-1"
+                        class="faq-item__checkbox"
+                        hidden
+                />
+
+                <div
+                        class="faq-item__question flex items-start justify-between gap-2"
+                >
+                    <h3
+                            class="faq-item__title text-base font-medium text-[#262626] lg:text-lg 2xl:text-xl"
+                    >
+                        Can I enroll in multiple courses at once?
+                    </h3>
+
+                    <label
+                            for="faq-1"
+                            class="faq-item__toggle flex items-center justify-center h-11 w-11 shrink-0 rounded-md text-[#262626] bg-[#FFF4E5] cursor-pointer hover:bg-[#FFEACC]"
+                    >
+                                <span
+                                        class="faq-item__icon flex items-center justify-center w-10 h-10 leading-none text-3xl font-light lg:w-11 lg:h-11 2xl:w-13 2xl:h-13 transition-transform duration-200 ease-in-out"
+                                >+</span
+                                >
+                    </label>
+                </div>
+
+                <div
+                        class="faq-item__answer-wrapper max-h-0 overflow-hidden transition-[max-height] duration-350 ease-linear"
+                >
+                    <div
+                            class="faq-item__answer mt-5 pt-5 border-t border-[#F1F1F3]"
+                    >
+                        <p
+                                class="faq-item__text text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                        >
+                            Absolutely! You can enroll in multiple
+                            courses simultaneously and access them at
+                            your convenience.
+                        </p>
+
+                        <a
+                                href="#"
+                                class="faq-item__link flex items-center justify-between mt-5 px-5 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-[#F7F7F8] lg:px-6 lg:py-4 lg:text-base 2xl:px-7.5 2xl:py-5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                        >
+                                    <span>
+                                        Enrollment Process for Different Courses
+                                    </span>
+                            <span
+                                    class="faq-item__arrow flex items-center justify-center h-10 w-10 shrink-0 rounded-full bg-white lg:h-12 lg:w-12 2xl:h-14 2xl:w-14"
+                            >
+                                        <img
+                                                src="assets/icons/arrow-right-black.svg"
+                                                alt="Arrow right"
+                                                class="h-5 w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7"
+                                        />
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <!-- FAQ Item -->
+            <article
+                    class="faq-item relative p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white lg:p-10 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <input
+                        type="checkbox"
+                        id="faq-2"
+                        class="faq-item__checkbox"
+                        hidden
+                />
+
+                <div
+                        class="faq-item__question flex items-start justify-between gap-2"
+                >
+                    <h3
+                            class="faq-item__title text-base font-medium text-[#262626] lg:text-lg 2xl:text-xl"
+                    >
+                        What kind of support can I expect from
+                        instructors?
+                    </h3>
+
+                    <label
+                            for="faq-2"
+                            class="faq-item__toggle flex items-center justify-center h-11 w-11 shrink-0 rounded-md text-[#262626] bg-[#FFF4E5] cursor-pointer hover:bg-[#FFEACC]"
+                    >
+                                <span
+                                        class="faq-item__icon flex items-center justify-center w-10 h-10 leading-none text-3xl font-light lg:w-11 lg:h-11 2xl:w-13 2xl:h-13 transition-transform duration-200 ease-in-out"
+                                >+</span
+                                >
+                    </label>
+                </div>
+
+                <div
+                        class="faq-item__answer-wrapper max-h-0 overflow-hidden transition-[max-height] duration-350 ease-linear"
+                >
+                    <div
+                            class="faq-item__answer mt-5 pt-5 border-t border-[#F1F1F3]"
+                    >
+                        <p
+                                class="faq-item__text text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                        >
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Dolore possimus accusamus
+                            aut sint? Provident ex molestias quidem
+                            tempore, dolorem voluptatem.
+                        </p>
+
+                        <a
+                                href="#"
+                                class="faq-item__link flex items-center justify-between mt-5 px-5 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-[#F7F7F8] lg:px-6 lg:py-4 lg:text-base 2xl:px-7.5 2xl:py-5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                        >
+                                    <span>
+                                        Enrollment Process for Different Courses
+                                    </span>
+                            <span
+                                    class="faq-item__arrow flex items-center justify-center h-10 w-10 shrink-0 rounded-full bg-white lg:h-12 lg:w-12 2xl:h-14 2xl:w-14"
+                            >
+                                        <img
+                                                src="assets/icons/arrow-right-black.svg"
+                                                alt="Arrow right"
+                                                class="h-5 w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7"
+                                        />
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FAQ Item -->
+            <article
+                    class="faq-item relative p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white lg:p-10 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <input
+                        type="checkbox"
+                        id="faq-3"
+                        class="faq-item__checkbox"
+                        hidden
+                />
+
+                <div
+                        class="faq-item__question flex items-start justify-between gap-2"
+                >
+                    <h3
+                            class="faq-item__title text-base font-medium text-[#262626] lg:text-lg 2xl:text-xl"
+                    >
+                        Are the courses self-paced or do they have
+                        specific start and end dates?
+                    </h3>
+
+                    <label
+                            for="faq-3"
+                            class="faq-item__toggle flex items-center justify-center h-11 w-11 shrink-0 rounded-md text-[#262626] bg-[#FFF4E5] cursor-pointer hover:bg-[#FFEACC]"
+                    >
+                                <span
+                                        class="faq-item__icon flex items-center justify-center w-10 h-10 leading-none text-3xl font-light lg:w-11 lg:h-11 2xl:w-13 2xl:h-13 transition-transform duration-200 ease-in-out"
+                                >+</span
+                                >
+                    </label>
+                </div>
+
+                <div
+                        class="faq-item__answer-wrapper max-h-0 overflow-hidden transition-[max-height] duration-350 ease-linear"
+                >
+                    <div
+                            class="faq-item__answer mt-5 pt-5 border-t border-[#F1F1F3]"
+                    >
+                        <p
+                                class="faq-item__text text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                        >
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Modi fugit mollitia ad,
+                            veniam et quibusdam?
+                        </p>
+
+                        <a
+                                href="#"
+                                class="faq-item__link flex items-center justify-between mt-5 px-5 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-[#F7F7F8] lg:px-6 lg:py-4 lg:text-base 2xl:px-7.5 2xl:py-5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                        >
+                                    <span>
+                                        Enrollment Process for Different Courses
+                                    </span>
+                            <span
+                                    class="faq-item__arrow flex items-center justify-center h-10 w-10 shrink-0 rounded-full bg-white lg:h-12 lg:w-12 2xl:h-14 2xl:w-14"
+                            >
+                                        <img
+                                                src="assets/icons/arrow-right-black.svg"
+                                                alt="Arrow right"
+                                                class="h-5 w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7"
+                                        />
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FAQ Item -->
+            <article
+                    class="faq-item relative p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white lg:p-10 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <input
+                        type="checkbox"
+                        id="faq-4"
+                        class="faq-item__checkbox"
+                        hidden
+                />
+
+                <div
+                        class="faq-item__question flex items-start justify-between gap-2"
+                >
+                    <h3
+                            class="faq-item__title text-base font-medium text-[#262626] lg:text-lg 2xl:text-xl"
+                    >
+                        Are there any prerequisites for the courses?
+                    </h3>
+
+                    <label
+                            for="faq-4"
+                            class="faq-item__toggle flex items-center justify-center h-11 w-11 shrink-0 rounded-md text-[#262626] bg-[#FFF4E5] cursor-pointer hover:bg-[#FFEACC]"
+                    >
+                                <span
+                                        class="faq-item__icon flex items-center justify-center w-10 h-10 leading-none text-3xl font-light lg:w-11 lg:h-11 2xl:w-13 2xl:h-13 transition-transform duration-200 ease-in-out"
+                                >+</span
+                                >
+                    </label>
+                </div>
+
+                <div
+                        class="faq-item__answer-wrapper max-h-0 overflow-hidden transition-[max-height] duration-350 ease-linear"
+                >
+                    <div
+                            class="faq-item__answer mt-5 pt-5 border-t border-[#F1F1F3]"
+                    >
+                        <p
+                                class="faq-item__text text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                        >
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Est possimus expedita
+                            placeat reprehenderit dolor, quisquam
+                            architecto voluptatem itaque, vel nobis
+                            repellat a! Aliquam delectus fuga voluptate
+                            sit aspernatur sint id placeat iste, laborum
+                            iure dolorum quisquam dicta ipsum, eaque
+                            hic.
+                        </p>
+
+                        <a
+                                href="#"
+                                class="faq-item__link flex items-center justify-between mt-5 px-5 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-[#F7F7F8] lg:px-6 lg:py-4 lg:text-base 2xl:px-7.5 2xl:py-5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                        >
+                                    <span>
+                                        Enrollment Process for Different Courses
+                                    </span>
+                            <span
+                                    class="faq-item__arrow flex items-center justify-center h-10 w-10 shrink-0 rounded-full bg-white lg:h-12 lg:w-12 2xl:h-14 2xl:w-14"
+                            >
+                                        <img
+                                                src="assets/icons/arrow-right-black.svg"
+                                                alt="Arrow right"
+                                                class="h-5 w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7"
+                                        />
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FAQ Item -->
+            <article
+                    class="faq-item relative p-6 border border-[#F1F1F3] rounded-[0.625rem] bg-white lg:p-10 2xl:p-12.5 2xl:rounded-xl"
+            >
+                <input
+                        type="checkbox"
+                        id="faq-5"
+                        class="faq-item__checkbox"
+                        hidden
+                />
+
+                <div
+                        class="faq-item__question flex items-start justify-between gap-2"
+                >
+                    <h3
+                            class="faq-item__title text-base font-medium text-[#262626] lg:text-lg 2xl:text-xl"
+                    >
+                        Can I download the course materials for offline
+                        access?
+                    </h3>
+
+                    <label
+                            for="faq-5"
+                            class="faq-item__toggle flex items-center justify-center h-11 w-11 shrink-0 rounded-md text-[#262626] bg-[#FFF4E5] cursor-pointer hover:bg-[#FFEACC]"
+                    >
+                                <span
+                                        class="faq-item__icon flex items-center justify-center w-10 h-10 leading-none text-3xl font-light lg:w-11 lg:h-11 2xl:w-13 2xl:h-13 transition-transform duration-200 ease-in-out"
+                                >+</span
+                                >
+                    </label>
+                </div>
+
+                <div
+                        class="faq-item__answer-wrapper max-h-0 overflow-hidden transition-[max-height] duration-350 ease-linear"
+                >
+                    <div
+                            class="faq-item__answer mt-5 pt-5 border-t border-[#F1F1F3]"
+                    >
+                        <p
+                                class="faq-item__text text-sm text-[#4C4C4D] lg:text-base 2xl:text-lg"
+                        >
+                            Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Eveniet, amet.
+                        </p>
+
+                        <a
+                                href="#"
+                                class="faq-item__link flex items-center justify-between mt-5 px-5 py-3.5 rounded-md text-sm font-medium text-[#262626] bg-[#F7F7F8] lg:px-6 lg:py-4 lg:text-base 2xl:px-7.5 2xl:py-5 2xl:text-lg transition-all duration-300 hover:bg-[#E4E4E7]"
+                        >
+                                    <span>
+                                        Enrollment Process for Different Courses
+                                    </span>
+                            <span
+                                    class="faq-item__arrow flex items-center justify-center h-10 w-10 shrink-0 rounded-full bg-white lg:h-12 lg:w-12 2xl:h-14 2xl:w-14"
+                            >
+                                        <img
+                                                src="assets/icons/arrow-right-black.svg"
+                                                alt="Arrow right"
+                                                class="h-5 w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7"
+                                        />
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer
+        class="footer mt-12.5 px-5 pt-12.5 pb-6 bg-white md:px-10 lg:mt-25 lg:px-20 lg:pt-15 lg:pb-4 2xl:mt-35.5 2xl:px-40.5 2xl:pt-25 2xl:pb-7.5"
+>
+    <!-- Footer Main -->
+    <div
+            class="footer__main flex flex-col items-start gap-6 md:flex-row md:justify-between"
+    >
+        <!-- Brand + Contact -->
+        <div
+                class="footer__brand text-[0.9375rem] lg:text-base 2xl:text-lg"
+        >
+            <!-- Logo -->
+            <a href="#" class="footer__logo block w-fit">
+                <img
+                        src="assets/img/logo/logo.svg"
+                        alt="Skillbridge Logo"
+                        class="h-11 w-11 2xl:w-13.5 2xl:h-13.5"
+                />
+            </a>
+
+            <!-- Contact -->
+            <ul
+                    id="contact"
+                    class="footer__contact flex flex-col mt-7.5 gap-3 lg:gap-3.5 2xl:mt-10 2xl:gap-5"
+            >
+                <li class="footer__contact-item">
+                    <a
+                            href="mailto:hello@skillbridge.com"
+                            class="footer__contact-link flex items-center gap-1.5 hover:underline"
+                    >
+                        <img
+                                src="assets/icons/email-icon.svg"
+                                alt="Email"
+                                class="h-6 w-6 shrink-0"
+                        />
+                        <span>hello@skillbridge.com</span>
+                    </a>
+                </li>
+
+                <li class="footer__contact-item">
+                    <a
+                            href="tel:+9191813232309"
+                            class="footer__contact-link flex items-center gap-1.5 hover:underline"
+                    >
+                        <img
+                                src="assets/icons/phone-icon.svg"
+                                alt="Phone"
+                                class="h-6 w-6 shrink-0"
+                        />
+                        <span>+91 91813 23 2309</span>
+                    </a>
+                </li>
+
+                <li class="footer__contact-item">
+                    <a
+                            href="https://www.google.com/maps/place/L%C4%83ng+Ch%E1%BB%A7+t%E1%BB%8Bch+H%E1%BB%93+Ch%C3%AD+Minh/@21.0369023,105.8320918,17z/data=!3m1!4b1!4m6!3m5!1s0x3135aba15ec15d17:0x620e85c2cfe14d4c!8m2!3d21.0368973!4d105.8346667!16s%2Fm%2F02xbhg7?entry=tts&g_ep=EgoyMDI2MDQxMy4wIPu8ASoASAFQAw%3D%3D"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer__contact-link flex items-center gap-1.5 hover:underline"
+                    >
+                        <img
+                                src="assets/icons/address-icon.svg"
+                                alt="Address"
+                                class="h-6 w-6 shrink-0"
+                        />
+                        <span>Somewhere in the World</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menus -->
+        <div
+                class="footer__menus flex flex-col gap-6 text-sm md:flex-row lg:gap-10 lg:text-base 2xl:gap-12 2xl:text-lg"
+        >
+            <!-- Footer Nav -->
+            <div class="footer__nav flex gap-7.5 lg:gap-10 2xl:gap-12">
+                <!-- Home -->
+                <div class="footer__column">
+                    <a
+                            href="index.html"
+                            class="footer__heading block text-lg font-semibold text-[#262626] 2xl:text-xl hover:underline"
+                    >
+                        Home
+                    </a>
+                    <ul
+                            class="footer__links flex flex-col mt-2.5 gap-1 font-normal text-[#59595A]"
+                    >
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="#benefits"
+                            >Benefits</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="pages/courses/index.html"
+                            >Our Courses</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="#testimonials"
+                            >Our Testimonials</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="#faq"
+                            >Our FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- About -->
+                <div class="footer__column">
+                    <a
+                            href="pages/about/index.html"
+                            class="footer__heading block text-lg font-semibold text-[#262626] 2xl:text-xl hover:underline"
+                    >
+                        About Us
+                    </a>
+                    <ul
+                            class="footer__links flex flex-col mt-2.5 gap-1 font-normal text-[#59595A]"
+                    >
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="pages/about/index.html#company"
+                            >Company</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="pages/about/index.html#achievements"
+                            >Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="block w-full hover:underline"
+                                    href="pages/about/index.html#goals"
+                            >Our Goals</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social -->
+            <div class="footer__social">
+                <h3
+                        class="footer__heading block text-lg font-semibold text-[#262626] 2xl:text-xl"
+                >
+                    Social Profiles
+                </h3>
+
+                <div class="mt-2.5 flex gap-3.5 2xl:mt-3.5">
+                    <a
+                            rel="noopener"
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            class="footer__social-link flex items-center justify-center h-11 w-11 border border-[#F1F1F3] rounded-md bg-[#F7F7F8] 2xl:h-13 2xl:w-13 2xl:rounded-lg hover:bg-[#E4E4E7]"
+                    >
+                        <img
+                                src="assets/icons/facebook-icon.svg"
+                                alt="Facebook"
+                                class="h-5 w-5"
+                        />
+                    </a>
+
+                    <a
+                            rel="noopener"
+                            href="https://x.com/"
+                            target="_blank"
+                            class="footer__social-link flex items-center justify-center h-11 w-11 border border-[#F1F1F3] rounded-md bg-[#F7F7F8] 2xl:h-13 2xl:w-13 2xl:rounded-lg hover:bg-[#E4E4E7]"
+                    >
+                        <img
+                                src="assets/icons/twitter-icon.svg"
+                                alt="Twitter"
+                                class="h-5 w-5"
+                        />
+                    </a>
+
+                    <a
+                            rel="noopener"
+                            href="https://vn.linkedin.com/"
+                            target="_blank"
+                            class="footer__social-link flex items-center justify-center h-11 w-11 border border-[#F1F1F3] rounded-md bg-[#F7F7F8] 2xl:h-13 2xl:w-13 2xl:rounded-lg hover:bg-[#E4E4E7]"
+                    >
+                        <img
+                                src="assets/icons/linkedin-icon.svg"
+                                alt="LinkedIn"
+                                class="h-5 w-5"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div
+            class="footer__bottom mt-5 pt-5 border-t border-[#F1F1F3] text-center text-sm text-[#656567] lg:mt-7.5 2xl:pt-7.5 2xl:mt-20"
+    >
+        <p>© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
