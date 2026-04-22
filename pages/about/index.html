@@ -12,6 +12,7 @@
     />
     <!-- Tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../../assets/css/home.css" />
     <!-- Icon -->
     <link
       rel="stylesheet"
@@ -21,135 +22,194 @@
   </head>
   <body
     class="font-['Be_Vietnam_Pro'] bg-[#F7F7F8] text-sm xl:text-base 2xl:text-lg leading-[1.5] text-[#262626]">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 mt-5 bg-[#F7F7F8]">
-      <div
-        class="w-full px-4 xl:px-0 xl:max-w-[1400px] xl:text-sm 2xl:max-w-[1860px] 2xl:text-lg mx-auto"
-      >
-        <div class="mt-10 xl:mt-5">
-          <p
-            class="bg-[#FF9500] text-white text-center py-2.5 px-4 xl:py-3.5 rounded-lg whitespace-nowrap"
-          >
-            Free Courses 🌟 Sale Ends Soon, Get It Now
-            <img
-              class="inline-block text-center pl-3 xl:pl-6"
-              src="../../assets/svg/arrow-right.svg"
-              alt="Arrow right"
-            />
-          </p>
-        </div>
-        <!-- Navigation bar -->
-        <nav class="bg-[#F7F7F8]">
-          <div
-            class="w-full px-4 xl:px-0 h-[73px] mx-auto flex items-center xl:px-0 xl:max-w-[1280px] xl:static xl:h-[81px] 2xl:h-[99px] 2xl:max-w-[1596px] border-b border-[#F1F1F3]"
-          >
-            <!-- LOGO -->
-            <a
-              href="#"
-              class="w-10 h-10 flex justify-center items-center bg-[#FF9500] rounded-lg xl:w-11 xl:h-11 2xl:w-13.5 2xl:h-13.5"
-            >
-              <img
-                class="w-6 h-6 xl:w-6.5 xl:h-6.5 2xl:w-8.25 2xl:h-8.25"
-                src="../../assets/svg/logo.svg"
-                alt="Logo"
-              />
-            </a>
-
-            <!-- Input toggle menu -->
-            <input class="peer hidden" type="checkbox" id="menu-toggle" />
-            <!-- overlay -->
-            <label
-              for="menu-toggle"
-              class="fixed inset-0 bg-[#808080] invisible peer-checked:visible opacity-0 peer-checked:opacity-100 transition-opacity duration-300 z-10"
-            ></label>
-
-            <ul
-              class="fixed top-0 right-0 w-[85vw] h-screen flex flex-col bg-white text-center rounded-tl-[50px] rounded-bl-[50px]
-                  translate-x-full opacity-0
-                  peer-checked:translate-x-0 peer-checked:opacity-100 peer-checked:pointer-events-auto peer-checked:overflow-hidden peer-checked:[&_.text-nav]:text-base
-                  transition-[transform, opacity] duration-300
-                  md:static md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:rounded-none md:flex md:flex-row md:pointer-events-auto lg:gap-[26px] lg:pl-[50px] z-20 sm:opacity-100"
-            >
-              <li
-                class="flex justify-between items-center border-b border-[#F1F1F3] h-17 pl-[19px] mt-7.5 pr-2 pb-6 mb-3 md:hidden"
-              >
-                <a
-                  href="#"
-                  class="w-10 h-10 flex justify-center items-center bg-[#FF9500] rounded-lg"
-                >
-                  <img
-                    class="block w-6 h-6"
-                    src="../../assets/svg/logo.svg"
-                    alt="Logo"
-                  />
-                </a>
-                <label
-                  for="menu-toggle"
-                  class="flex justify-center items-center cursor-pointer"
-                >
-                  <img
-                    class="px-3"
-                    src="../../assets/svg/heroicon.svg"
-                    alt="Hero Icon"
-                  />
-                </label>
-              </li>
-
-              <li>
-                <a
-                  class="block lg:inline-block text-nav peer-checked:text-base py-3.5 px-5 hover:bg-[#F1F1F3] hover:rounded-lg transition-colors duration-300"
-                  href="../../index.html"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class="block lg:inline-block text-nav peer-checked:text-base py-3.5 px-5 hover:bg-[#F1F1F3] hover:rounded-lg transition-colors duration-300"
-                  href=""
-                  >Courses</a
-                >
-              </li>
-              <li>
-                <a
-                  class="block lg:inline-block py-3.5 px-5 hover:bg-[#F1F1F3] hover:rounded-lg transition-colors duration-300"
-                  href="../about/index.html"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="block lg:inline-block py-3.5 px-5 hover:bg-[#F1F1F3] hover:rounded-lg transition-colors duration-300"
-                  href="../pricing/index.html"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  class="block lg:inline-block py-3.5 px-5 hover:bg-[#F1F1F3] hover:rounded-lg transition-colors duration-300"
-                  href="#"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-            <!-- Sign up & Login -->
-            <div class="ml-auto flex items-center">
-              <a class="inline-block px-8.5 py-3.5" href="">Sign Up</a>
-              <a
-                class="inline-block px-8.5 py-3.5 bg-[#FF9500] text-white rounded-lg"
-                href=""
-                >Login</a
-              >
-              <label class="cursor-pointer" for="menu-toggle">
-                <img
-                  class="ml-5 lg:hidden md:hidden w-8.5 h-8.5"
-                  src="../../assets/svg/btn-container.svg"
-                  alt="Menu"
-                />
-              </label>
+    <!-- Input toggle -->
+    <input
+        type="checkbox"
+        name="mobile-menu-toggle"
+        id="mobile-menu-toggle"
+        hidden
+    />
+    <!-- Promo Bar -->
+    <div
+            class="promo-bar-wrapper mt-10 px-4 bg-[#F7F7F8] lg:mt-5 2xl:px-7.5"
+    >
+        <div
+                class="promo-bar flex items-center justify-center mx-auto gap-3 px-4 py-2.5 rounded-md text-sm font-normal text-white bg-[#FF9500] lg:gap-5.75 2xl:rounded-lg 2xl:py-3.5 2xl:text-lg cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E68600] hover:shadow-lg"
+        >
+            <div class="promo-bar__text">
+                Free Courses 🌟 Sale Ends Soon, Get It Now
             </div>
-          </div>
-        </nav>
-      </div>
+
+            <div
+                    class="promo-bar__icon flex items-center justify-center w-5 h-5 2xl:w-6 2xl:h-6"
+            >
+                <img src="../../assets/svg/arrow-right.svg" alt="Arrow Right" />
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header sticky top-0 z-50 px-4 bg-[#F7F7F8] 2xl:px-7.5">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div
+                    class="wrapper flex items-center justify-between py-3.5 border-b border-[#F1F1F3] text-sm sm:px-15 lg:py-4 2xl:px-33 2xl:py-5 2xl:text-lg"
+            >
+                <!-- Logo -->
+                <a
+                        class="navbar__logo block w-10 h-10 lg:w-11 lg:h-11 2xl:w-13.5 2xl:h-13.5 cursor-pointer"
+                >
+                    <img
+                            class="w-full"
+                            src="../../assets/img/logo/logo.svg"
+                            alt="Logo"
+                    />
+                </a>
+
+                <!-- Navigation Menu -->
+                <ul
+                        class="navbar__menu hidden items-center mr-auto ml-12.5 gap-1 lg:flex"
+                >
+                    <li class="navbar__menu-item">
+                        <a
+                                href="../../index.html"
+                                class="navbar__menu-link block px-5 py-3 rounded-md  transition-all duration-100 hover:text-[#E68600]"
+                        >Home</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="../courses/index.html"
+                                class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                        >Courses</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="../about/index.html"
+                                class="navbar__menu-link block px-5 py-3 rounded-md border border-[#F1F1F3] bg-[#F1F1F3] transition-all duration-100 hover:text-[#E68600]"
+                        >About Us</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="../pricing/index.html"
+                                class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                        >Pricing</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="#contact"
+                                class="navbar__menu-link block px-5 py-3 rounded-md transition-all duration-100 hover:text-[#E68600]"
+                        >Contact</a
+                        >
+                    </li>
+                </ul>
+
+                <!-- Authentication Links -->
+                <div class="navbar__auth flex ml-auto mr-5 gap-2 lg:mr-0">
+                    <a
+                            href="pages/sign-up/index.html"
+                            class="navbar__signup block px-6 py-3 rounded-md text-[#262626] cursor-pointer transition-all duration-100 hover:text-[#E68600]"
+                    >
+                        Sign Up
+                    </a>
+
+                    <a
+                            href="pages/login/index.html"
+                            class="navbar__login block px-6 py-3 rounded-md text-white bg-[#FF9500] cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E68600] hover:shadow-lg"
+                    >
+                        Login
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle Button -->
+                <label
+                        class="navbar__toggle block w-[1.59375rem] h-[1.0625rem] lg:hidden cursor-pointer"
+                        for="mobile-menu-toggle"
+                >
+                    <img
+                            src="../../assets/icons/mobile-menu-toggle-icon.svg"
+                            alt="Toggle Menu"
+                    />
+                </label>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+                    class="mobile-menu fixed top-0 right-[-85vw] z-50 flex flex-col items-center w-[85vw] h-screen gap-6.25 rounded-l-[3.125rem] bg-white transition-all duration-300 ease-in-out"
+            >
+                <div class="mobile-menu__header w-full mt-4 pl-4.75 pr-2">
+                    <div
+                            class="wrapper flex items-center justify-between w-full py-3.5 border-b border-[#F1F1F3]"
+                    >
+                        <a class="mobile-menu__logo block w-10 h-10">
+                            <img
+                                    src="../../assets/img/logo/logo.svg"
+                                    alt="Logo"
+                            />
+                        </a>
+
+                        <label
+                                class="mobile-menu__close flex items-center justify-center w-10 h-10 cursor-pointer"
+                                for="mobile-menu-toggle"
+                        >
+                            <img
+                                    class="w-[1.40625rem] h-[1.40625rem]"
+                                    src="../../assets/icons/close-btn.svg"
+                                    alt="Close Menu"
+                            />
+                        </label>
+                    </div>
+                </div>
+
+                <ul
+                        class="mobile-menu__list flex flex-col w-full gap-5 text-center text-base"
+                >
+                    <li class="navbar__menu-item">
+                        <a
+                                href="index.html"
+                                class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                        >Home</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="pages/courses/index.html"
+                                class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                        >Courses</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="pages/about/index.html"
+                                class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                        >About Us</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="pages/pricing/index.html"
+                                class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                        >Pricing</a
+                        >
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a
+                                href="#contact"
+                                class="navbar__menu-link block w-full py-3.5 active:bg-[#F2F2F7]"
+                        >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Overlay -->
+            <label
+                    for="mobile-menu-toggle"
+                    class="overlay block fixed inset-0 z-49 opacity-0 invisible pointer-events-none bg-[#808080] cursor-pointer transition-all duration-300 ease-in-out"
+            ></label>
+        </div>
     </header>
     <!-- Main Content -->
     <main class="px-4 xl:px-0">
